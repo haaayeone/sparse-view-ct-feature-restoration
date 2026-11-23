@@ -1,0 +1,10 @@
+﻿__pycache__/
+*.pyc
+*.tgz
+*.pt
+*.pth
+*.npy
+*.npz
+*.dcm
+weights/
+.ipynb_checkpoints/
