@@ -1,0 +1,30 @@
+11/23/2026 08:40:57 - ==== medsiglip_after_r360_nv6  A+C (조건 입력 제거 + λ=t/(T−1))  seed=43  device=cuda  amp=True
+     hp={'T': 100, 'hidden': 1024, 'depth': 4, 'epochs': 200, 'lr': 0.0001, 'wd': 0.0001, 'bs': 256, 'ema': 0.999}
+11/23/2026 08:40:59 - Loading train (526481 slices)...
+11/23/2026 08:42:40 - Loading val (113386 slices)...
+11/23/2026 08:43:35 - Loading test (112935 slices)...
+11/23/2026 08:44:33 - train data on GPU (fp16)
+11/23/2026 08:44:34 - probe=weights/linprobe_medsiglip_after_r360_nv6_none.best.pt  AUROC E_f=0.9110  E_u=0.5812
+11/23/2026 08:44:42 -   nocond s43 ep   1/200  train=0.001968  val_restore(EMA, 1-step)=0.007121  best(val_restore)  (8s)
+11/23/2026 08:45:50 -   nocond s43 ep  10/200  train=0.000701  val_restore(EMA, 1-step)=0.003070  best(val_restore)  (76s)
+11/23/2026 08:47:06 -   nocond s43 ep  20/200  train=0.000613  val_restore(EMA, 1-step)=0.002882  best(val_restore)  (151s)
+11/23/2026 08:48:22 -   nocond s43 ep  30/200  train=0.000574  val_restore(EMA, 1-step)=0.002816  best(val_restore)  (228s)
+11/23/2026 08:49:37 -   nocond s43 ep  40/200  train=0.000548  val_restore(EMA, 1-step)=0.002785  best(val_restore)  (302s)
+11/23/2026 08:50:52 -   nocond s43 ep  50/200  train=0.000531  val_restore(EMA, 1-step)=0.002767  best(val_restore)  (378s)
+11/23/2026 08:52:07 -   nocond s43 ep  60/200  train=0.000517  val_restore(EMA, 1-step)=0.002762  best(val_restore)  (453s)
+11/23/2026 08:53:22 -   nocond s43 ep  70/200  train=0.000505  val_restore(EMA, 1-step)=0.002761  best(val_restore)  (528s)
+11/23/2026 08:54:37 -   nocond s43 ep  80/200  train=0.000496  val_restore(EMA, 1-step)=0.002766    (603s)
+11/23/2026 08:55:52 -   nocond s43 ep  90/200  train=0.000488  val_restore(EMA, 1-step)=0.002768    (678s)
+11/23/2026 08:57:07 -   nocond s43 ep 100/200  train=0.000481  val_restore(EMA, 1-step)=0.002776    (753s)
+11/23/2026 08:58:22 -   nocond s43 ep 110/200  train=0.000476  val_restore(EMA, 1-step)=0.002780    (828s)
+11/23/2026 08:59:38 -   nocond s43 ep 120/200  train=0.000472  val_restore(EMA, 1-step)=0.002789    (904s)
+11/23/2026 09:00:57 -   nocond s43 ep 130/200  train=0.000466  val_restore(EMA, 1-step)=0.002793    (983s)
+11/23/2026 09:02:17 -   nocond s43 ep 140/200  train=0.000459  val_restore(EMA, 1-step)=0.002803    (1063s)
+11/23/2026 09:03:37 -   nocond s43 ep 150/200  train=0.000457  val_restore(EMA, 1-step)=0.002811    (1143s)
+11/23/2026 09:04:57 -   nocond s43 ep 160/200  train=0.000455  val_restore(EMA, 1-step)=0.002822    (1223s)
+11/23/2026 09:06:16 -   nocond s43 ep 170/200  train=0.000450  val_restore(EMA, 1-step)=0.002829    (1301s)
+11/23/2026 09:07:35 -   nocond s43 ep 180/200  train=0.000447  val_restore(EMA, 1-step)=0.002837    (1380s)
+11/23/2026 09:08:54 -   nocond s43 ep 190/200  train=0.000443  val_restore(EMA, 1-step)=0.002849    (1459s)
+11/23/2026 09:10:12 -   nocond s43 ep 200/200  train=0.000440  val_restore(EMA, 1-step)=0.002855    (1537s)
+11/23/2026 09:10:18 - best epoch=71 (val 1-step MSE=0.002760)  val MSE by steps: 1:0.002760  5:0.003176  10:0.003442  20:0.003684  → S*=1
+11/23/2026 09:10:32 - ==== done medsiglip_after_r360_nv6  (val로 고른 단계 수 S* = 1 → 판정에는 diffusion_nc 사용)

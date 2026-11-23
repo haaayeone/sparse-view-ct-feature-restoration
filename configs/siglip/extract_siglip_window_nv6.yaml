@@ -1,0 +1,10 @@
+master_csv:   /data0/hayeon/master_df.csv
+output_dir:   /data0/hayeon/features_v2/siglip_window/feature_nv6
+preview_dir:  /data0/hayeon/features_v2/siglip_window/preview_nv6
+encoder:      siglip
+input_mode:   window
+n_views:      6
+radon_size:   256
+n_preview:    5
+batch_size:   64
+num_workers:  44

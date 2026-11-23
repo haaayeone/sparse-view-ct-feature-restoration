@@ -1,0 +1,46 @@
+{
+ "tag": "medsiglip_after_r360_nv90_to_nv30",
+ "method": "identity",
+ "seed": 0,
+ "encoder_tag": "medsiglip_after_r360_nv90",
+ "train_view": 90,
+ "test_view": 30,
+ "auroc_f": 0.9190980653332987,
+ "auroc_u": 0.6989717991702119,
+ "auroc_r": 0.6989717991702119,
+ "delta": 0.0,
+ "R_pct": 0.0,
+ "cos_u": 0.8060129880905151,
+ "cos_r": 0.8060129880905151,
+ "test_restore_mse": 0.01578294271085075,
+ "val_restore_mse": NaN,
+ "per_label_r": {
+  "epidural": 0.7622524969335903,
+  "intraparenchymal": 0.7146023455163453,
+  "intraventricular": 0.6201013207888546,
+  "subarachnoid": 0.6497042295178942,
+  "subdural": 0.7410393354848755,
+  "any": 0.7061310667797115
+ },
+ "per_label_f": {
+  "epidural": 0.9029598154313416,
+  "intraparenchymal": 0.9501424591074104,
+  "intraventricular": 0.9627731083222308,
+  "subarachnoid": 0.8884711846402891,
+  "subdural": 0.8972638626934997,
+  "any": 0.9129779618050212
+ },
+ "per_label_u": {
+  "epidural": 0.7622524969335903,
+  "intraparenchymal": 0.7146023455163453,
+  "intraventricular": 0.6201013207888546,
+  "subarachnoid": 0.6497042295178942,
+  "subdural": 0.7410393354848755,
+  "any": 0.7061310667797115
+ },
+ "auroc_r_same_view": 0.8568418471179893,
+ "config": "configs/medsiglip_after/train_medsiglip_after_nv90.yaml",
+ "probe": "weights/linprobe_medsiglip_after_r360_nv90_none.best.pt",
+ "weights": null,
+ "created": "2026-10-30T00:51:40.704319"
+}

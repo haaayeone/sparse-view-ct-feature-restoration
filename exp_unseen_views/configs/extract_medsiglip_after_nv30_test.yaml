@@ -1,0 +1,12 @@
+# 자동 생성 (exp_unseen_views/extract_test_views.py): extract_medsiglip_after_nv6.yaml 에서 n_views·master_csv·경로만 바꿈
+master_csv: /data0/hayeon/master_df_test_sub500.csv
+output_dir: /data0/hayeon/features_v2/medsiglip_after/feature_nv30
+preview_dir: /data0/hayeon/features_v2/medsiglip_after/preview_nv30
+encoder: medsiglip
+input_mode: window
+n_views: 30
+radon_size: 256
+n_preview: 5
+batch_size: 64
+num_workers: 44
+model_id: google/medsiglip-448

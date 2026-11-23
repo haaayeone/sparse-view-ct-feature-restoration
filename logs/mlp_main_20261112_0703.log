@@ -1,0 +1,7 @@
+bash: /home/neumous-lab/miniconda3/lib/libtinfo.so.6: no version information available (required by bash)
+==================== compare configs/medsiglip_after/train_medsiglip_after_nv180.yaml  seeds=[42]  2026-11-12 07:03:19
+11/12/2026 07:03:20 - ==== medsiglip_after_r360_nv180  config=configs/medsiglip_after/train_medsiglip_after_nv180.yaml  device=cuda  amp=True
+     jobs=[('identity', 0), ('mlp', 42)]
+     hp={'T': 100, 'hidden': 1024, 'depth': 4, 'epochs': 200, 'lr': 0.0001, 'wd': 0.0001, 'bs': 256, 'ema': 0.999}  train_frac=1.0
+11/12/2026 07:03:22 - Loading train (526481 slices)...
+  Loading to RAM:   0%|          | 0/1029 [00:00<?, ?it/s]  Loading to RAM:   0%|          | 1/1029 [00:03<54:51,  3.20s/it]  Loading to RAM:   0%|          | 3/1029 [00:03<15:48,  1.08it/s]  Loading to RAM:   1%|          | 8/1029 [00:03<05:10,  3.29it/s]  Loading to RAM:   1%|          | 9/1029 [00:05<10:30,  1.62it/s]  Loading to RAM:   1%|          | 11/1029 [00:06<08:30,  1.99it/s]  Loading to RAM:   2%|▏         | 17/1029 [00:07<05:14,  3.22it/s]  Loading to RAM:   2%|▏         | 19/1029 [00:08<06:23,  2.63it/s]  Loading to RAM:   2%|▏         | 25/1029 [00:10<05:11,  3.22it/s]  Loading to RAM:   3%|▎         | 32/1029 [00:10<03:31,  4.70it/s]  Loading to RAM:   3%|▎         | 33/1029 [00:12<06:02,  2.75it/s]  Loading to RAM:   4%|▍         | 41/1029 [00:13<04:05,  4.02it/s]  Loading to RAM:   5%|▍         | 49/1029 [00:14<03:18,  4.95it/s]

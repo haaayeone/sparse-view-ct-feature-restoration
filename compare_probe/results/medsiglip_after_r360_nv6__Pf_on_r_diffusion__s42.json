@@ -1,0 +1,22 @@
+{
+ "tag": "medsiglip_after_r360_nv6",
+ "method": "Pf_on_r_diffusion",
+ "seed": 42,
+ "view": 6,
+ "probe_trained_on": "f",
+ "tested_on": "r_diffusion",
+ "auroc": 0.8214118148947748,
+ "per_label": {
+  "epidural": 0.8258648232868929,
+  "intraparenchymal": 0.8123066425577007,
+  "intraventricular": 0.8660552597557973,
+  "subarachnoid": 0.7758316058294981,
+  "subdural": 0.8187317535229379,
+  "any": 0.8296808044158213
+ },
+ "probe_ckpt": "weights/linprobe_medsiglip_after_r360_nv6_none.best.pt",
+ "probe_best_val_auroc": null,
+ "probe_best_epoch": null,
+ "config": "configs/medsiglip_after/train_medsiglip_after_nv6.yaml",
+ "created": "2026-11-12T06:35:26.897443"
+}

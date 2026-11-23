@@ -1,0 +1,22 @@
+{
+ "tag": "medsiglip_after_r360_nv45",
+ "method": "Pu_on_r_mlp",
+ "seed": 42,
+ "view": 45,
+ "probe_trained_on": "u",
+ "tested_on": "r_mlp",
+ "auroc": 0.8150040024189806,
+ "per_label": {
+  "epidural": 0.825187995679106,
+  "intraparenchymal": 0.8380203193707594,
+  "intraventricular": 0.8837391077242542,
+  "subarachnoid": 0.776227645519697,
+  "subdural": 0.7712020480111195,
+  "any": 0.7956468982089482
+ },
+ "probe_ckpt": "compare_probe/weights/linprobe_medsiglip_after_r360_nv45__Pu__s42.pt",
+ "probe_best_val_auroc": 0.8660380485782716,
+ "probe_best_epoch": 200,
+ "config": "configs/medsiglip_after/train_medsiglip_after_nv45.yaml",
+ "created": "2026-11-23T07:36:36.932996"
+}

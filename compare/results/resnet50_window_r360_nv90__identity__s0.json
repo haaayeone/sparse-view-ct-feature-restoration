@@ -1,0 +1,58 @@
+{
+ "tag": "resnet50_window_r360_nv90",
+ "method": "identity",
+ "seed": 0,
+ "encoder_tag": "resnet50_window_r360_nv90",
+ "config": "configs/resnet50/train_resnet50_window_nv90.yaml",
+ "emb_dim": 2048,
+ "train_N": 526481,
+ "train_frac": 1.0,
+ "hp": {
+  "T": 100,
+  "hidden": 1024,
+  "depth": 4,
+  "epochs": 200,
+  "lr": 0.0001,
+  "wd": 0.0001,
+  "bs": 256,
+  "ema": 0.999
+ },
+ "amp": true,
+ "selection": "val_restoration_mse (hyperparameter)",
+ "seconds": 1.5102040767669678,
+ "n_params": 0,
+ "auroc_f": 0.8836806877986723,
+ "auroc_u": 0.7859766364535172,
+ "auroc_r": 0.7859766364535172,
+ "delta": 0.0,
+ "R_pct": 0.0,
+ "cos_u": 0.7626772522926331,
+ "cos_r": 0.7626772522926331,
+ "per_label_r": {
+  "epidural": 0.7920967309091906,
+  "intraparenchymal": 0.7912724844885448,
+  "intraventricular": 0.8616198576924792,
+  "subarachnoid": 0.7380513983199952,
+  "subdural": 0.7488502162453631,
+  "any": 0.7839691310655312
+ },
+ "per_label_f": {
+  "epidural": 0.8403513674574776,
+  "intraparenchymal": 0.9026955074408531,
+  "intraventricular": 0.9437727390866439,
+  "subarachnoid": 0.8543923849308244,
+  "subdural": 0.871965160394633,
+  "any": 0.8889069674816015
+ },
+ "per_label_u": {
+  "epidural": 0.7920967309091906,
+  "intraparenchymal": 0.7912724844885448,
+  "intraventricular": 0.8616198576924792,
+  "subarachnoid": 0.7380513983199952,
+  "subdural": 0.7488502162453631,
+  "any": 0.7839691310655312
+ },
+ "val_restore_mse": 0.03777188738165426,
+ "test_restore_mse": 0.037660667813620666,
+ "created": "2026-11-12T13:53:27.905307"
+}

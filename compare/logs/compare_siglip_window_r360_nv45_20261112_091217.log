@@ -1,0 +1,36 @@
+11/12/2026 09:12:17 - ==== siglip_window_r360_nv45  config=configs/siglip/train_siglip_window_nv45.yaml  device=cuda  amp=True
+     jobs=[('identity', 0), ('mlp', 42)]
+     hp={'T': 100, 'hidden': 1024, 'depth': 4, 'epochs': 200, 'lr': 0.0001, 'wd': 0.0001, 'bs': 256, 'ema': 0.999}  train_frac=1.0
+11/12/2026 09:12:18 - Loading train (526481 slices)...
+11/12/2026 09:13:49 - Loading val (113386 slices)...
+11/12/2026 09:14:41 - Loading test (112935 slices)...
+11/12/2026 09:15:37 - train data on GPU (fp16, 2.4 GB)
+11/12/2026 09:15:38 - probe=weights/linprobe_siglip_window_r360_nv45_none.best.pt  emb_dim=1152  train_N=526481  test_N=112935  AUROC E_f=0.9053  E_u=0.7492  cos(f,u)=0.9170
+11/12/2026 09:15:38 - 
+---- siglip_window_r360_nv45  method=identity  seed=-
+11/12/2026 09:15:39 - [identity     s0] AUROC E_r=0.7492  Δ=+0.0000  R=0.0%  cos(f,r)=0.9170  val MSE=0.062503  test MSE=0.062787
+11/12/2026 09:15:39 - 
+---- siglip_window_r360_nv45  method=mlp  seed=42
+11/12/2026 09:15:46 -   mlp s42 ep   1/200  train=0.012087  val_restore(EMA)=0.013048  best(val_restore)  (6s)
+11/12/2026 09:16:41 -   mlp s42 ep  10/200  train=0.005844  val_restore(EMA)=0.005883  best(val_restore)  (61s)
+11/12/2026 09:17:42 -   mlp s42 ep  20/200  train=0.004960  val_restore(EMA)=0.005925    (122s)
+11/12/2026 09:18:43 -   mlp s42 ep  30/200  train=0.004370  val_restore(EMA)=0.006129    (183s)
+11/12/2026 09:19:44 -   mlp s42 ep  40/200  train=0.003973  val_restore(EMA)=0.006310    (244s)
+11/12/2026 09:20:45 -   mlp s42 ep  50/200  train=0.003705  val_restore(EMA)=0.006450    (305s)
+11/12/2026 09:21:46 -   mlp s42 ep  60/200  train=0.003515  val_restore(EMA)=0.006565    (366s)
+11/12/2026 09:22:47 -   mlp s42 ep  70/200  train=0.003375  val_restore(EMA)=0.006652    (427s)
+11/12/2026 09:23:48 -   mlp s42 ep  80/200  train=0.003267  val_restore(EMA)=0.006729    (488s)
+11/12/2026 09:24:49 -   mlp s42 ep  90/200  train=0.003181  val_restore(EMA)=0.006791    (549s)
+11/12/2026 09:25:50 -   mlp s42 ep 100/200  train=0.003110  val_restore(EMA)=0.006847    (610s)
+11/12/2026 09:26:51 -   mlp s42 ep 110/200  train=0.003050  val_restore(EMA)=0.006898    (671s)
+11/12/2026 09:27:52 -   mlp s42 ep 120/200  train=0.002998  val_restore(EMA)=0.006944    (732s)
+11/12/2026 09:28:53 -   mlp s42 ep 130/200  train=0.002955  val_restore(EMA)=0.006982    (793s)
+11/12/2026 09:29:54 -   mlp s42 ep 140/200  train=0.002916  val_restore(EMA)=0.007019    (854s)
+11/12/2026 09:30:55 -   mlp s42 ep 150/200  train=0.002881  val_restore(EMA)=0.007053    (915s)
+11/12/2026 09:31:56 -   mlp s42 ep 160/200  train=0.002849  val_restore(EMA)=0.007083    (976s)
+11/12/2026 09:32:57 -   mlp s42 ep 170/200  train=0.002821  val_restore(EMA)=0.007115    (1037s)
+11/12/2026 09:33:58 -   mlp s42 ep 180/200  train=0.002796  val_restore(EMA)=0.007144    (1098s)
+11/12/2026 09:34:59 -   mlp s42 ep 190/200  train=0.002773  val_restore(EMA)=0.007169    (1159s)
+11/12/2026 09:35:59 -   mlp s42 ep 200/200  train=0.002751  val_restore(EMA)=0.007195    (1220s)
+11/12/2026 09:36:01 - [mlp          s42] AUROC E_r=0.8679  Δ=+0.1187  R=76.0%  cos(f,r)=0.9922  val MSE=0.005845  test MSE=0.005897
+11/12/2026 09:36:01 - ==== done siglip_window_r360_nv45

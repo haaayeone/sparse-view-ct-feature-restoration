@@ -1,0 +1,282 @@
+10/13/2026 10:05:52 - INFO - __main__ - Logging to file: logs/densenet121_window_r360_nv23_none_20261013_100552.log
+10/13/2026 10:05:52 - INFO - __main__ - 
+Device   : cuda  GPUs=1
+Pooling  : none  {}
+Tag      : densenet121_window_r360_nv23
+10/13/2026 10:05:53 - INFO - __main__ - Loading train data to RAM...
+10/13/2026 10:10:55 - INFO - __main__ - Loading val data to RAM...
+10/13/2026 10:12:19 - INFO - __main__ - emb_dim=1024  train_N=526481  val_N=113386
+10/13/2026 10:12:21 - INFO - __main__ - 
+============================================================
+Stage 1 — Cold Diffusion
+  tag=densenet121_window_r360_nv23  pooling=none  emb_dim=1024  T=100
+  hidden=1024  depth=4  epochs=200  lr=0.0001  EMA=0.999
+  train_N=526481  val_N=113386
+  Baseline cos(E_full, E_under) = 0.7325
+============================================================
+10/13/2026 10:12:34 - INFO - __main__ - Ep   1/200  train=0.078545  val=0.041344  mse(full,rest)=0.132132  cos(f,u)=0.7317  cos(f,r)=0.9281  ← BEST
+10/13/2026 10:12:46 - INFO - __main__ - Ep   2/200  train=0.031060  val=0.025216  mse(full,rest)=0.134596  cos(f,u)=0.7317  cos(f,r)=0.9266  ← BEST
+10/13/2026 10:12:58 - INFO - __main__ - Ep   3/200  train=0.020606  val=0.017265  mse(full,rest)=0.127269  cos(f,u)=0.7317  cos(f,r)=0.9303  ← BEST
+10/13/2026 10:13:10 - INFO - __main__ - Ep   4/200  train=0.015783  val=0.015128  mse(full,rest)=0.131404  cos(f,u)=0.7317  cos(f,r)=0.9287  ← BEST
+10/13/2026 10:13:22 - INFO - __main__ - Ep   5/200  train=0.013135  val=0.012999  mse(full,rest)=0.130661  cos(f,u)=0.7317  cos(f,r)=0.9283  ← BEST
+10/13/2026 10:13:35 - INFO - __main__ - Ep   6/200  train=0.011410  val=0.011065  mse(full,rest)=0.127933  cos(f,u)=0.7317  cos(f,r)=0.9299  ← BEST
+10/13/2026 10:13:47 - INFO - __main__ - Ep   7/200  train=0.010408  val=0.010867  mse(full,rest)=0.127998  cos(f,u)=0.7317  cos(f,r)=0.9300  ← BEST
+10/13/2026 10:13:59 - INFO - __main__ - Ep   8/200  train=0.009671  val=0.010472  mse(full,rest)=0.130680  cos(f,u)=0.7317  cos(f,r)=0.9299  ← BEST
+10/13/2026 10:14:11 - INFO - __main__ - Ep   9/200  train=0.009068  val=0.008945  mse(full,rest)=0.125023  cos(f,u)=0.7317  cos(f,r)=0.9317  ← BEST
+10/13/2026 10:14:23 - INFO - __main__ - Ep  10/200  train=0.008577  val=0.008986  mse(full,rest)=0.121091  cos(f,u)=0.7317  cos(f,r)=0.9338
+10/13/2026 10:14:35 - INFO - __main__ - Ep  11/200  train=0.008249  val=0.008791  mse(full,rest)=0.126627  cos(f,u)=0.7317  cos(f,r)=0.9307  ← BEST
+10/13/2026 10:14:47 - INFO - __main__ - Ep  12/200  train=0.007959  val=0.007829  mse(full,rest)=0.119892  cos(f,u)=0.7317  cos(f,r)=0.9344  ← BEST
+10/13/2026 10:14:59 - INFO - __main__ - Ep  13/200  train=0.007693  val=0.008050  mse(full,rest)=0.123124  cos(f,u)=0.7317  cos(f,r)=0.9329
+10/13/2026 10:15:11 - INFO - __main__ - Ep  14/200  train=0.007437  val=0.008023  mse(full,rest)=0.118608  cos(f,u)=0.7317  cos(f,r)=0.9351
+10/13/2026 10:15:24 - INFO - __main__ - Ep  15/200  train=0.007312  val=0.008154  mse(full,rest)=0.129110  cos(f,u)=0.7317  cos(f,r)=0.9291
+10/13/2026 10:15:36 - INFO - __main__ - Ep  16/200  train=0.007121  val=0.008045  mse(full,rest)=0.128655  cos(f,u)=0.7317  cos(f,r)=0.9300
+10/13/2026 10:15:48 - INFO - __main__ - Ep  17/200  train=0.007014  val=0.007588  mse(full,rest)=0.122329  cos(f,u)=0.7317  cos(f,r)=0.9332  ← BEST
+10/13/2026 10:16:00 - INFO - __main__ - Ep  18/200  train=0.006707  val=0.007299  mse(full,rest)=0.121616  cos(f,u)=0.7317  cos(f,r)=0.9337  ← BEST
+10/13/2026 10:16:12 - INFO - __main__ - Ep  19/200  train=0.006660  val=0.006379  mse(full,rest)=0.119531  cos(f,u)=0.7317  cos(f,r)=0.9347  ← BEST
+10/13/2026 10:16:25 - INFO - __main__ - Ep  20/200  train=0.006526  val=0.006372  mse(full,rest)=0.118845  cos(f,u)=0.7317  cos(f,r)=0.9351  ← BEST
+10/13/2026 10:16:37 - INFO - __main__ - Ep  21/200  train=0.006437  val=0.006077  mse(full,rest)=0.119693  cos(f,u)=0.7317  cos(f,r)=0.9349  ← BEST
+10/13/2026 10:16:49 - INFO - __main__ - Ep  22/200  train=0.006294  val=0.006820  mse(full,rest)=0.116484  cos(f,u)=0.7317  cos(f,r)=0.9364
+10/13/2026 10:17:01 - INFO - __main__ - Ep  23/200  train=0.006285  val=0.006263  mse(full,rest)=0.115829  cos(f,u)=0.7317  cos(f,r)=0.9368
+10/13/2026 10:17:13 - INFO - __main__ - Ep  24/200  train=0.006129  val=0.007060  mse(full,rest)=0.121260  cos(f,u)=0.7317  cos(f,r)=0.9339
+10/13/2026 10:17:25 - INFO - __main__ - Ep  25/200  train=0.006063  val=0.006382  mse(full,rest)=0.125908  cos(f,u)=0.7317  cos(f,r)=0.9311
+10/13/2026 10:17:37 - INFO - __main__ - Ep  26/200  train=0.005969  val=0.006374  mse(full,rest)=0.124021  cos(f,u)=0.7317  cos(f,r)=0.9327
+10/13/2026 10:17:49 - INFO - __main__ - Ep  27/200  train=0.005874  val=0.006179  mse(full,rest)=0.121899  cos(f,u)=0.7317  cos(f,r)=0.9335
+10/13/2026 10:18:01 - INFO - __main__ - Ep  28/200  train=0.005821  val=0.005946  mse(full,rest)=0.122444  cos(f,u)=0.7317  cos(f,r)=0.9335  ← BEST
+10/13/2026 10:18:14 - INFO - __main__ - Ep  29/200  train=0.005766  val=0.006405  mse(full,rest)=0.125294  cos(f,u)=0.7317  cos(f,r)=0.9318
+10/13/2026 10:18:26 - INFO - __main__ - Ep  30/200  train=0.005684  val=0.006062  mse(full,rest)=0.121489  cos(f,u)=0.7317  cos(f,r)=0.9337
+10/13/2026 10:18:38 - INFO - __main__ - Ep  31/200  train=0.005537  val=0.005169  mse(full,rest)=0.118281  cos(f,u)=0.7317  cos(f,r)=0.9357  ← BEST
+10/13/2026 10:18:50 - INFO - __main__ - Ep  32/200  train=0.005513  val=0.006166  mse(full,rest)=0.117736  cos(f,u)=0.7317  cos(f,r)=0.9358
+10/13/2026 10:19:02 - INFO - __main__ - Ep  33/200  train=0.005492  val=0.006092  mse(full,rest)=0.126247  cos(f,u)=0.7317  cos(f,r)=0.9310
+10/13/2026 10:19:14 - INFO - __main__ - Ep  34/200  train=0.005440  val=0.005328  mse(full,rest)=0.118985  cos(f,u)=0.7317  cos(f,r)=0.9351
+10/13/2026 10:19:26 - INFO - __main__ - Ep  35/200  train=0.005351  val=0.005516  mse(full,rest)=0.117506  cos(f,u)=0.7317  cos(f,r)=0.9360
+10/13/2026 10:19:38 - INFO - __main__ - Ep  36/200  train=0.005399  val=0.005359  mse(full,rest)=0.116465  cos(f,u)=0.7317  cos(f,r)=0.9365
+10/13/2026 10:19:50 - INFO - __main__ - Ep  37/200  train=0.005273  val=0.005455  mse(full,rest)=0.128298  cos(f,u)=0.7317  cos(f,r)=0.9297
+10/13/2026 10:20:03 - INFO - __main__ - Ep  38/200  train=0.005230  val=0.005718  mse(full,rest)=0.116373  cos(f,u)=0.7317  cos(f,r)=0.9364
+10/13/2026 10:20:15 - INFO - __main__ - Ep  39/200  train=0.005199  val=0.005036  mse(full,rest)=0.115422  cos(f,u)=0.7317  cos(f,r)=0.9370  ← BEST
+10/13/2026 10:20:27 - INFO - __main__ - Ep  40/200  train=0.005169  val=0.005072  mse(full,rest)=0.116425  cos(f,u)=0.7317  cos(f,r)=0.9365
+10/13/2026 10:20:39 - INFO - __main__ - Ep  41/200  train=0.005089  val=0.005627  mse(full,rest)=0.118906  cos(f,u)=0.7317  cos(f,r)=0.9352
+10/13/2026 10:20:51 - INFO - __main__ - Ep  42/200  train=0.005069  val=0.005920  mse(full,rest)=0.122363  cos(f,u)=0.7317  cos(f,r)=0.9334
+10/13/2026 10:21:03 - INFO - __main__ - Ep  43/200  train=0.004994  val=0.005045  mse(full,rest)=0.115537  cos(f,u)=0.7317  cos(f,r)=0.9370
+10/13/2026 10:21:15 - INFO - __main__ - Ep  44/200  train=0.005015  val=0.005536  mse(full,rest)=0.120654  cos(f,u)=0.7317  cos(f,r)=0.9341
+10/13/2026 10:21:27 - INFO - __main__ - Ep  45/200  train=0.004981  val=0.005740  mse(full,rest)=0.123219  cos(f,u)=0.7317  cos(f,r)=0.9327
+10/13/2026 10:21:39 - INFO - __main__ - Ep  46/200  train=0.004913  val=0.004355  mse(full,rest)=0.115307  cos(f,u)=0.7317  cos(f,r)=0.9371  ← BEST
+10/13/2026 10:21:51 - INFO - __main__ - Ep  47/200  train=0.004832  val=0.004782  mse(full,rest)=0.122719  cos(f,u)=0.7317  cos(f,r)=0.9330
+10/13/2026 10:22:03 - INFO - __main__ - Ep  48/200  train=0.004851  val=0.005052  mse(full,rest)=0.119539  cos(f,u)=0.7317  cos(f,r)=0.9346
+10/13/2026 10:22:15 - INFO - __main__ - Ep  49/200  train=0.004880  val=0.004748  mse(full,rest)=0.116908  cos(f,u)=0.7317  cos(f,r)=0.9362
+10/13/2026 10:22:28 - INFO - __main__ - Ep  50/200  train=0.004738  val=0.005043  mse(full,rest)=0.123720  cos(f,u)=0.7317  cos(f,r)=0.9325
+10/13/2026 10:22:40 - INFO - __main__ - Ep  51/200  train=0.004774  val=0.005256  mse(full,rest)=0.116416  cos(f,u)=0.7317  cos(f,r)=0.9365
+10/13/2026 10:22:52 - INFO - __main__ - Ep  52/200  train=0.004722  val=0.004989  mse(full,rest)=0.116956  cos(f,u)=0.7317  cos(f,r)=0.9362
+10/13/2026 10:23:04 - INFO - __main__ - Ep  53/200  train=0.004758  val=0.005891  mse(full,rest)=0.125487  cos(f,u)=0.7317  cos(f,r)=0.9315
+10/13/2026 10:23:16 - INFO - __main__ - Ep  54/200  train=0.004682  val=0.004615  mse(full,rest)=0.115293  cos(f,u)=0.7317  cos(f,r)=0.9372
+10/13/2026 10:23:28 - INFO - __main__ - Ep  55/200  train=0.004619  val=0.004362  mse(full,rest)=0.119727  cos(f,u)=0.7317  cos(f,r)=0.9348
+10/13/2026 10:23:40 - INFO - __main__ - Ep  56/200  train=0.004601  val=0.004964  mse(full,rest)=0.131030  cos(f,u)=0.7317  cos(f,r)=0.9282
+10/13/2026 10:23:52 - INFO - __main__ - Ep  57/200  train=0.004539  val=0.004375  mse(full,rest)=0.116071  cos(f,u)=0.7317  cos(f,r)=0.9366
+10/13/2026 10:24:04 - INFO - __main__ - Ep  58/200  train=0.004529  val=0.004666  mse(full,rest)=0.116848  cos(f,u)=0.7317  cos(f,r)=0.9362
+10/13/2026 10:24:16 - INFO - __main__ - Ep  59/200  train=0.004537  val=0.004768  mse(full,rest)=0.117144  cos(f,u)=0.7317  cos(f,r)=0.9361
+10/13/2026 10:24:29 - INFO - __main__ - Ep  60/200  train=0.004471  val=0.005370  mse(full,rest)=0.120870  cos(f,u)=0.7317  cos(f,r)=0.9338
+10/13/2026 10:24:41 - INFO - __main__ - Ep  61/200  train=0.004501  val=0.004841  mse(full,rest)=0.122037  cos(f,u)=0.7317  cos(f,r)=0.9335
+10/13/2026 10:24:53 - INFO - __main__ - Ep  62/200  train=0.004449  val=0.004586  mse(full,rest)=0.120961  cos(f,u)=0.7317  cos(f,r)=0.9340
+10/13/2026 10:25:05 - INFO - __main__ - Ep  63/200  train=0.004405  val=0.004212  mse(full,rest)=0.118113  cos(f,u)=0.7317  cos(f,r)=0.9359  ← BEST
+10/13/2026 10:25:17 - INFO - __main__ - Ep  64/200  train=0.004354  val=0.004706  mse(full,rest)=0.118733  cos(f,u)=0.7317  cos(f,r)=0.9352
+10/13/2026 10:25:29 - INFO - __main__ - Ep  65/200  train=0.004365  val=0.004605  mse(full,rest)=0.127845  cos(f,u)=0.7317  cos(f,r)=0.9303
+10/13/2026 10:25:41 - INFO - __main__ - Ep  66/200  train=0.004358  val=0.004698  mse(full,rest)=0.120336  cos(f,u)=0.7317  cos(f,r)=0.9358
+10/13/2026 10:25:53 - INFO - __main__ - Ep  67/200  train=0.004362  val=0.004419  mse(full,rest)=0.117814  cos(f,u)=0.7317  cos(f,r)=0.9361
+10/13/2026 10:26:06 - INFO - __main__ - Ep  68/200  train=0.004285  val=0.004094  mse(full,rest)=0.119643  cos(f,u)=0.7317  cos(f,r)=0.9349  ← BEST
+10/13/2026 10:26:18 - INFO - __main__ - Ep  69/200  train=0.004296  val=0.005271  mse(full,rest)=0.126223  cos(f,u)=0.7317  cos(f,r)=0.9311
+10/13/2026 10:26:30 - INFO - __main__ - Ep  70/200  train=0.004240  val=0.004215  mse(full,rest)=0.121504  cos(f,u)=0.7317  cos(f,r)=0.9336
+10/13/2026 10:26:42 - INFO - __main__ - Ep  71/200  train=0.004240  val=0.004952  mse(full,rest)=0.122986  cos(f,u)=0.7317  cos(f,r)=0.9327
+10/13/2026 10:26:54 - INFO - __main__ - Ep  72/200  train=0.004138  val=0.004202  mse(full,rest)=0.118255  cos(f,u)=0.7317  cos(f,r)=0.9359
+10/13/2026 10:27:06 - INFO - __main__ - Ep  73/200  train=0.004207  val=0.004115  mse(full,rest)=0.122525  cos(f,u)=0.7317  cos(f,r)=0.9337
+10/13/2026 10:27:18 - INFO - __main__ - Ep  74/200  train=0.004143  val=0.004625  mse(full,rest)=0.119648  cos(f,u)=0.7317  cos(f,r)=0.9348
+10/13/2026 10:27:30 - INFO - __main__ - Ep  75/200  train=0.004126  val=0.004336  mse(full,rest)=0.122685  cos(f,u)=0.7317  cos(f,r)=0.9333
+10/13/2026 10:27:42 - INFO - __main__ - Ep  76/200  train=0.004150  val=0.004163  mse(full,rest)=0.124632  cos(f,u)=0.7317  cos(f,r)=0.9320
+10/13/2026 10:27:54 - INFO - __main__ - Ep  77/200  train=0.004117  val=0.004305  mse(full,rest)=0.119653  cos(f,u)=0.7317  cos(f,r)=0.9347
+10/13/2026 10:28:07 - INFO - __main__ - Ep  78/200  train=0.004100  val=0.004427  mse(full,rest)=0.122925  cos(f,u)=0.7317  cos(f,r)=0.9329
+10/13/2026 10:28:19 - INFO - __main__ - Ep  79/200  train=0.004084  val=0.004263  mse(full,rest)=0.122543  cos(f,u)=0.7317  cos(f,r)=0.9330
+10/13/2026 10:28:31 - INFO - __main__ - Ep  80/200  train=0.003978  val=0.004369  mse(full,rest)=0.119014  cos(f,u)=0.7317  cos(f,r)=0.9351
+10/13/2026 10:28:43 - INFO - __main__ - Ep  81/200  train=0.004031  val=0.005231  mse(full,rest)=0.141135  cos(f,u)=0.7317  cos(f,r)=0.9225
+10/13/2026 10:28:55 - INFO - __main__ - Ep  82/200  train=0.004026  val=0.004264  mse(full,rest)=0.121833  cos(f,u)=0.7317  cos(f,r)=0.9337
+10/13/2026 10:29:07 - INFO - __main__ - Ep  83/200  train=0.003976  val=0.004441  mse(full,rest)=0.129200  cos(f,u)=0.7317  cos(f,r)=0.9296
+10/13/2026 10:29:19 - INFO - __main__ - Ep  84/200  train=0.004010  val=0.004296  mse(full,rest)=0.128468  cos(f,u)=0.7317  cos(f,r)=0.9297
+10/13/2026 10:29:31 - INFO - __main__ - Ep  85/200  train=0.004008  val=0.004728  mse(full,rest)=0.133212  cos(f,u)=0.7317  cos(f,r)=0.9269
+10/13/2026 10:29:43 - INFO - __main__ - Ep  86/200  train=0.003948  val=0.003735  mse(full,rest)=0.123774  cos(f,u)=0.7317  cos(f,r)=0.9326  ← BEST
+10/13/2026 10:29:55 - INFO - __main__ - Ep  87/200  train=0.003941  val=0.004060  mse(full,rest)=0.126595  cos(f,u)=0.7317  cos(f,r)=0.9308
+10/13/2026 10:30:08 - INFO - __main__ - Ep  88/200  train=0.003878  val=0.004106  mse(full,rest)=0.129186  cos(f,u)=0.7317  cos(f,r)=0.9307
+10/13/2026 10:30:20 - INFO - __main__ - Ep  89/200  train=0.003899  val=0.004045  mse(full,rest)=0.129053  cos(f,u)=0.7317  cos(f,r)=0.9293
+10/13/2026 10:30:32 - INFO - __main__ - Ep  90/200  train=0.003845  val=0.003580  mse(full,rest)=0.121039  cos(f,u)=0.7317  cos(f,r)=0.9339  ← BEST
+10/13/2026 10:30:44 - INFO - __main__ - Ep  91/200  train=0.003873  val=0.004088  mse(full,rest)=0.126877  cos(f,u)=0.7317  cos(f,r)=0.9305
+10/13/2026 10:30:56 - INFO - __main__ - Ep  92/200  train=0.003882  val=0.004383  mse(full,rest)=0.128792  cos(f,u)=0.7317  cos(f,r)=0.9297
+10/13/2026 10:31:08 - INFO - __main__ - Ep  93/200  train=0.003798  val=0.005228  mse(full,rest)=0.139717  cos(f,u)=0.7317  cos(f,r)=0.9236
+10/13/2026 10:31:20 - INFO - __main__ - Ep  94/200  train=0.003802  val=0.004753  mse(full,rest)=0.131822  cos(f,u)=0.7317  cos(f,r)=0.9278
+10/13/2026 10:31:32 - INFO - __main__ - Ep  95/200  train=0.003810  val=0.003872  mse(full,rest)=0.122358  cos(f,u)=0.7317  cos(f,r)=0.9339
+10/13/2026 10:31:44 - INFO - __main__ - Ep  96/200  train=0.003785  val=0.003409  mse(full,rest)=0.122297  cos(f,u)=0.7317  cos(f,r)=0.9344  ← BEST
+10/13/2026 10:31:57 - INFO - __main__ - Ep  97/200  train=0.003740  val=0.004722  mse(full,rest)=0.140891  cos(f,u)=0.7317  cos(f,r)=0.9230
+10/13/2026 10:32:09 - INFO - __main__ - Ep  98/200  train=0.003793  val=0.003708  mse(full,rest)=0.122024  cos(f,u)=0.7317  cos(f,r)=0.9334
+10/13/2026 10:32:21 - INFO - __main__ - Ep  99/200  train=0.003713  val=0.004556  mse(full,rest)=0.135186  cos(f,u)=0.7317  cos(f,r)=0.9262
+10/13/2026 10:32:33 - INFO - __main__ - Ep 100/200  train=0.003707  val=0.004243  mse(full,rest)=0.141391  cos(f,u)=0.7317  cos(f,r)=0.9226
+10/13/2026 10:32:45 - INFO - __main__ - Ep 101/200  train=0.003729  val=0.003776  mse(full,rest)=0.132184  cos(f,u)=0.7317  cos(f,r)=0.9277
+10/13/2026 10:32:57 - INFO - __main__ - Ep 102/200  train=0.003658  val=0.003851  mse(full,rest)=0.125281  cos(f,u)=0.7317  cos(f,r)=0.9315
+10/13/2026 10:33:09 - INFO - __main__ - Ep 103/200  train=0.003732  val=0.003932  mse(full,rest)=0.132365  cos(f,u)=0.7317  cos(f,r)=0.9291
+10/13/2026 10:33:21 - INFO - __main__ - Ep 104/200  train=0.003709  val=0.003973  mse(full,rest)=0.133120  cos(f,u)=0.7317  cos(f,r)=0.9278
+10/13/2026 10:33:33 - INFO - __main__ - Ep 105/200  train=0.003675  val=0.003803  mse(full,rest)=0.136786  cos(f,u)=0.7317  cos(f,r)=0.9256
+10/13/2026 10:33:46 - INFO - __main__ - Ep 106/200  train=0.003659  val=0.004260  mse(full,rest)=0.121370  cos(f,u)=0.7317  cos(f,r)=0.9339
+10/13/2026 10:33:58 - INFO - __main__ - Ep 107/200  train=0.003580  val=0.003983  mse(full,rest)=0.130879  cos(f,u)=0.7317  cos(f,r)=0.9284
+10/13/2026 10:34:10 - INFO - __main__ - Ep 108/200  train=0.003686  val=0.003766  mse(full,rest)=0.119740  cos(f,u)=0.7317  cos(f,r)=0.9350
+10/13/2026 10:34:22 - INFO - __main__ - Ep 109/200  train=0.003605  val=0.003757  mse(full,rest)=0.125554  cos(f,u)=0.7317  cos(f,r)=0.9318
+10/13/2026 10:34:34 - INFO - __main__ - Ep 110/200  train=0.003612  val=0.003722  mse(full,rest)=0.123844  cos(f,u)=0.7317  cos(f,r)=0.9325
+10/13/2026 10:34:46 - INFO - __main__ - Ep 111/200  train=0.003646  val=0.003727  mse(full,rest)=0.133250  cos(f,u)=0.7317  cos(f,r)=0.9276
+10/13/2026 10:34:58 - INFO - __main__ - Ep 112/200  train=0.003552  val=0.003753  mse(full,rest)=0.126752  cos(f,u)=0.7317  cos(f,r)=0.9306
+10/13/2026 10:35:10 - INFO - __main__ - Ep 113/200  train=0.003606  val=0.004413  mse(full,rest)=0.126870  cos(f,u)=0.7317  cos(f,r)=0.9310
+10/13/2026 10:35:22 - INFO - __main__ - Ep 114/200  train=0.003544  val=0.003723  mse(full,rest)=0.127127  cos(f,u)=0.7317  cos(f,r)=0.9304
+10/13/2026 10:35:35 - INFO - __main__ - Ep 115/200  train=0.003528  val=0.003367  mse(full,rest)=0.126152  cos(f,u)=0.7317  cos(f,r)=0.9312  ← BEST
+10/13/2026 10:35:47 - INFO - __main__ - Ep 116/200  train=0.003518  val=0.003666  mse(full,rest)=0.130801  cos(f,u)=0.7317  cos(f,r)=0.9286
+10/13/2026 10:35:59 - INFO - __main__ - Ep 117/200  train=0.003551  val=0.003475  mse(full,rest)=0.121449  cos(f,u)=0.7317  cos(f,r)=0.9339
+10/13/2026 10:36:11 - INFO - __main__ - Ep 118/200  train=0.003528  val=0.003462  mse(full,rest)=0.124386  cos(f,u)=0.7317  cos(f,r)=0.9323
+10/13/2026 10:36:23 - INFO - __main__ - Ep 119/200  train=0.003488  val=0.003626  mse(full,rest)=0.123767  cos(f,u)=0.7317  cos(f,r)=0.9324
+10/13/2026 10:36:35 - INFO - __main__ - Ep 120/200  train=0.003542  val=0.003742  mse(full,rest)=0.129081  cos(f,u)=0.7317  cos(f,r)=0.9295
+10/13/2026 10:36:47 - INFO - __main__ - Ep 121/200  train=0.003502  val=0.003436  mse(full,rest)=0.127074  cos(f,u)=0.7317  cos(f,r)=0.9307
+10/13/2026 10:36:59 - INFO - __main__ - Ep 122/200  train=0.003479  val=0.003248  mse(full,rest)=0.127302  cos(f,u)=0.7317  cos(f,r)=0.9308  ← BEST
+10/13/2026 10:37:12 - INFO - __main__ - Ep 123/200  train=0.003465  val=0.003457  mse(full,rest)=0.135460  cos(f,u)=0.7317  cos(f,r)=0.9259
+10/13/2026 10:37:24 - INFO - __main__ - Ep 124/200  train=0.003437  val=0.003870  mse(full,rest)=0.127145  cos(f,u)=0.7317  cos(f,r)=0.9307
+10/13/2026 10:37:36 - INFO - __main__ - Ep 125/200  train=0.003407  val=0.003881  mse(full,rest)=0.129389  cos(f,u)=0.7317  cos(f,r)=0.9295
+10/13/2026 10:37:48 - INFO - __main__ - Ep 126/200  train=0.003341  val=0.003385  mse(full,rest)=0.130808  cos(f,u)=0.7317  cos(f,r)=0.9283
+10/13/2026 10:38:00 - INFO - __main__ - Ep 127/200  train=0.003423  val=0.003793  mse(full,rest)=0.124620  cos(f,u)=0.7317  cos(f,r)=0.9321
+10/13/2026 10:38:12 - INFO - __main__ - Ep 128/200  train=0.003360  val=0.003949  mse(full,rest)=0.123150  cos(f,u)=0.7317  cos(f,r)=0.9327
+10/13/2026 10:38:24 - INFO - __main__ - Ep 129/200  train=0.003413  val=0.003746  mse(full,rest)=0.136534  cos(f,u)=0.7317  cos(f,r)=0.9255
+10/13/2026 10:38:36 - INFO - __main__ - Ep 130/200  train=0.003396  val=0.003956  mse(full,rest)=0.134494  cos(f,u)=0.7317  cos(f,r)=0.9267
+10/13/2026 10:38:48 - INFO - __main__ - Ep 131/200  train=0.003368  val=0.003582  mse(full,rest)=0.132380  cos(f,u)=0.7317  cos(f,r)=0.9276
+10/13/2026 10:39:00 - INFO - __main__ - Ep 132/200  train=0.003393  val=0.003286  mse(full,rest)=0.130838  cos(f,u)=0.7317  cos(f,r)=0.9292
+10/13/2026 10:39:12 - INFO - __main__ - Ep 133/200  train=0.003337  val=0.003785  mse(full,rest)=0.132106  cos(f,u)=0.7317  cos(f,r)=0.9285
+10/13/2026 10:39:25 - INFO - __main__ - Ep 134/200  train=0.003320  val=0.003819  mse(full,rest)=0.132759  cos(f,u)=0.7317  cos(f,r)=0.9272
+10/13/2026 10:39:37 - INFO - __main__ - Ep 135/200  train=0.003334  val=0.003849  mse(full,rest)=0.130420  cos(f,u)=0.7317  cos(f,r)=0.9293
+10/13/2026 10:39:49 - INFO - __main__ - Ep 136/200  train=0.003299  val=0.003684  mse(full,rest)=0.129973  cos(f,u)=0.7317  cos(f,r)=0.9298
+10/13/2026 10:40:01 - INFO - __main__ - Ep 137/200  train=0.003310  val=0.003488  mse(full,rest)=0.131392  cos(f,u)=0.7317  cos(f,r)=0.9279
+10/13/2026 10:40:13 - INFO - __main__ - Ep 138/200  train=0.003298  val=0.003926  mse(full,rest)=0.138080  cos(f,u)=0.7317  cos(f,r)=0.9241
+10/13/2026 10:40:25 - INFO - __main__ - Ep 139/200  train=0.003286  val=0.003229  mse(full,rest)=0.131723  cos(f,u)=0.7317  cos(f,r)=0.9286  ← BEST
+10/13/2026 10:40:37 - INFO - __main__ - Ep 140/200  train=0.003284  val=0.003571  mse(full,rest)=0.138638  cos(f,u)=0.7317  cos(f,r)=0.9241
+10/13/2026 10:40:49 - INFO - __main__ - Ep 141/200  train=0.003321  val=0.003360  mse(full,rest)=0.127807  cos(f,u)=0.7317  cos(f,r)=0.9302
+10/13/2026 10:41:01 - INFO - __main__ - Ep 142/200  train=0.003244  val=0.003383  mse(full,rest)=0.134897  cos(f,u)=0.7317  cos(f,r)=0.9266
+10/13/2026 10:41:14 - INFO - __main__ - Ep 143/200  train=0.003295  val=0.003450  mse(full,rest)=0.130927  cos(f,u)=0.7317  cos(f,r)=0.9287
+10/13/2026 10:41:26 - INFO - __main__ - Ep 144/200  train=0.003220  val=0.003001  mse(full,rest)=0.126624  cos(f,u)=0.7317  cos(f,r)=0.9318  ← BEST
+10/13/2026 10:41:38 - INFO - __main__ - Ep 145/200  train=0.003226  val=0.003555  mse(full,rest)=0.141904  cos(f,u)=0.7317  cos(f,r)=0.9220
+10/13/2026 10:41:50 - INFO - __main__ - Ep 146/200  train=0.003215  val=0.003157  mse(full,rest)=0.133774  cos(f,u)=0.7317  cos(f,r)=0.9272
+10/13/2026 10:42:02 - INFO - __main__ - Ep 147/200  train=0.003189  val=0.003631  mse(full,rest)=0.129331  cos(f,u)=0.7317  cos(f,r)=0.9298
+10/13/2026 10:42:14 - INFO - __main__ - Ep 148/200  train=0.003173  val=0.003572  mse(full,rest)=0.125113  cos(f,u)=0.7317  cos(f,r)=0.9317
+10/13/2026 10:42:26 - INFO - __main__ - Ep 149/200  train=0.003192  val=0.003453  mse(full,rest)=0.151618  cos(f,u)=0.7317  cos(f,r)=0.9167
+10/13/2026 10:42:38 - INFO - __main__ - Ep 150/200  train=0.003179  val=0.003531  mse(full,rest)=0.133070  cos(f,u)=0.7317  cos(f,r)=0.9286
+10/13/2026 10:42:50 - INFO - __main__ - Ep 151/200  train=0.003205  val=0.003473  mse(full,rest)=0.133006  cos(f,u)=0.7317  cos(f,r)=0.9273
+10/13/2026 10:43:02 - INFO - __main__ - Ep 152/200  train=0.003142  val=0.003064  mse(full,rest)=0.130606  cos(f,u)=0.7317  cos(f,r)=0.9286
+10/13/2026 10:43:14 - INFO - __main__ - Ep 153/200  train=0.003152  val=0.003627  mse(full,rest)=0.136397  cos(f,u)=0.7317  cos(f,r)=0.9253
+10/13/2026 10:43:27 - INFO - __main__ - Ep 154/200  train=0.003135  val=0.003658  mse(full,rest)=0.138837  cos(f,u)=0.7317  cos(f,r)=0.9238
+10/13/2026 10:43:39 - INFO - __main__ - Ep 155/200  train=0.003133  val=0.004391  mse(full,rest)=0.144548  cos(f,u)=0.7317  cos(f,r)=0.9207
+10/13/2026 10:43:51 - INFO - __main__ - Ep 156/200  train=0.003110  val=0.003417  mse(full,rest)=0.145183  cos(f,u)=0.7317  cos(f,r)=0.9205
+10/13/2026 10:44:03 - INFO - __main__ - Ep 157/200  train=0.003130  val=0.003204  mse(full,rest)=0.129166  cos(f,u)=0.7317  cos(f,r)=0.9296
+10/13/2026 10:44:15 - INFO - __main__ - Ep 158/200  train=0.003132  val=0.003044  mse(full,rest)=0.132531  cos(f,u)=0.7317  cos(f,r)=0.9277
+10/13/2026 10:44:27 - INFO - __main__ - Ep 159/200  train=0.003120  val=0.002964  mse(full,rest)=0.141930  cos(f,u)=0.7317  cos(f,r)=0.9237  ← BEST
+10/13/2026 10:44:39 - INFO - __main__ - Ep 160/200  train=0.003129  val=0.003248  mse(full,rest)=0.146406  cos(f,u)=0.7317  cos(f,r)=0.9198
+10/13/2026 10:44:51 - INFO - __main__ - Ep 161/200  train=0.003090  val=0.003380  mse(full,rest)=0.140507  cos(f,u)=0.7317  cos(f,r)=0.9227
+10/13/2026 10:45:03 - INFO - __main__ - Ep 162/200  train=0.003105  val=0.003146  mse(full,rest)=0.147530  cos(f,u)=0.7317  cos(f,r)=0.9190
+10/13/2026 10:45:15 - INFO - __main__ - Ep 163/200  train=0.003097  val=0.002798  mse(full,rest)=0.136693  cos(f,u)=0.7317  cos(f,r)=0.9253  ← BEST
+10/13/2026 10:45:27 - INFO - __main__ - Ep 164/200  train=0.003038  val=0.003252  mse(full,rest)=0.136333  cos(f,u)=0.7317  cos(f,r)=0.9256
+10/13/2026 10:45:40 - INFO - __main__ - Ep 165/200  train=0.003081  val=0.003965  mse(full,rest)=0.143233  cos(f,u)=0.7317  cos(f,r)=0.9215
+10/13/2026 10:45:52 - INFO - __main__ - Ep 166/200  train=0.003014  val=0.002658  mse(full,rest)=0.137704  cos(f,u)=0.7317  cos(f,r)=0.9252  ← BEST
+10/13/2026 10:46:04 - INFO - __main__ - Ep 167/200  train=0.003025  val=0.003230  mse(full,rest)=0.142402  cos(f,u)=0.7317  cos(f,r)=0.9221
+10/13/2026 10:46:16 - INFO - __main__ - Ep 168/200  train=0.003065  val=0.003243  mse(full,rest)=0.136175  cos(f,u)=0.7317  cos(f,r)=0.9254
+10/13/2026 10:46:28 - INFO - __main__ - Ep 169/200  train=0.003025  val=0.002902  mse(full,rest)=0.144038  cos(f,u)=0.7317  cos(f,r)=0.9218
+10/13/2026 10:46:40 - INFO - __main__ - Ep 170/200  train=0.002990  val=0.003500  mse(full,rest)=0.138768  cos(f,u)=0.7317  cos(f,r)=0.9252
+10/13/2026 10:46:52 - INFO - __main__ - Ep 171/200  train=0.003014  val=0.003131  mse(full,rest)=0.144905  cos(f,u)=0.7317  cos(f,r)=0.9211
+10/13/2026 10:47:04 - INFO - __main__ - Ep 172/200  train=0.003015  val=0.004909  mse(full,rest)=0.182857  cos(f,u)=0.7317  cos(f,r)=0.9014
+10/13/2026 10:47:16 - INFO - __main__ - Ep 173/200  train=0.002995  val=0.003028  mse(full,rest)=0.140035  cos(f,u)=0.7317  cos(f,r)=0.9232
+10/13/2026 10:47:28 - INFO - __main__ - Ep 174/200  train=0.003015  val=0.003048  mse(full,rest)=0.127018  cos(f,u)=0.7317  cos(f,r)=0.9313
+10/13/2026 10:47:40 - INFO - __main__ - Ep 175/200  train=0.002980  val=0.002879  mse(full,rest)=0.135761  cos(f,u)=0.7317  cos(f,r)=0.9257
+10/13/2026 10:47:53 - INFO - __main__ - Ep 176/200  train=0.002954  val=0.003823  mse(full,rest)=0.137143  cos(f,u)=0.7317  cos(f,r)=0.9250
+10/13/2026 10:48:05 - INFO - __main__ - Ep 177/200  train=0.002973  val=0.002937  mse(full,rest)=0.130074  cos(f,u)=0.7317  cos(f,r)=0.9289
+10/13/2026 10:48:17 - INFO - __main__ - Ep 178/200  train=0.002941  val=0.003067  mse(full,rest)=0.145107  cos(f,u)=0.7317  cos(f,r)=0.9205
+10/13/2026 10:48:29 - INFO - __main__ - Ep 179/200  train=0.002944  val=0.002965  mse(full,rest)=0.148987  cos(f,u)=0.7317  cos(f,r)=0.9181
+10/13/2026 10:48:41 - INFO - __main__ - Ep 180/200  train=0.002938  val=0.002820  mse(full,rest)=0.132027  cos(f,u)=0.7317  cos(f,r)=0.9278
+10/13/2026 10:48:53 - INFO - __main__ - Ep 181/200  train=0.002869  val=0.002792  mse(full,rest)=0.154684  cos(f,u)=0.7317  cos(f,r)=0.9148
+10/13/2026 10:49:05 - INFO - __main__ - Ep 182/200  train=0.002906  val=0.002812  mse(full,rest)=0.135143  cos(f,u)=0.7317  cos(f,r)=0.9264
+10/13/2026 10:49:17 - INFO - __main__ - Ep 183/200  train=0.002921  val=0.003482  mse(full,rest)=0.142196  cos(f,u)=0.7317  cos(f,r)=0.9219
+10/13/2026 10:49:29 - INFO - __main__ - Ep 184/200  train=0.002912  val=0.003019  mse(full,rest)=0.144385  cos(f,u)=0.7317  cos(f,r)=0.9207
+10/13/2026 10:49:41 - INFO - __main__ - Ep 185/200  train=0.002915  val=0.003807  mse(full,rest)=0.142299  cos(f,u)=0.7317  cos(f,r)=0.9221
+10/13/2026 10:49:54 - INFO - __main__ - Ep 186/200  train=0.002861  val=0.002863  mse(full,rest)=0.143844  cos(f,u)=0.7317  cos(f,r)=0.9209
+10/13/2026 10:50:06 - INFO - __main__ - Ep 187/200  train=0.002911  val=0.002746  mse(full,rest)=0.129282  cos(f,u)=0.7317  cos(f,r)=0.9298
+10/13/2026 10:50:18 - INFO - __main__ - Ep 188/200  train=0.002879  val=0.002960  mse(full,rest)=0.139505  cos(f,u)=0.7317  cos(f,r)=0.9234
+10/13/2026 10:50:30 - INFO - __main__ - Ep 189/200  train=0.002905  val=0.003065  mse(full,rest)=0.156569  cos(f,u)=0.7317  cos(f,r)=0.9137
+10/13/2026 10:50:42 - INFO - __main__ - Ep 190/200  train=0.002873  val=0.003164  mse(full,rest)=0.142112  cos(f,u)=0.7317  cos(f,r)=0.9218
+10/13/2026 10:50:54 - INFO - __main__ - Ep 191/200  train=0.002824  val=0.002990  mse(full,rest)=0.135754  cos(f,u)=0.7317  cos(f,r)=0.9260
+10/13/2026 10:51:06 - INFO - __main__ - Ep 192/200  train=0.002837  val=0.002952  mse(full,rest)=0.140472  cos(f,u)=0.7317  cos(f,r)=0.9233
+10/13/2026 10:51:18 - INFO - __main__ - Ep 193/200  train=0.002876  val=0.002728  mse(full,rest)=0.143110  cos(f,u)=0.7317  cos(f,r)=0.9221
+10/13/2026 10:51:30 - INFO - __main__ - Ep 194/200  train=0.002857  val=0.002588  mse(full,rest)=0.136746  cos(f,u)=0.7317  cos(f,r)=0.9250  ← BEST
+10/13/2026 10:51:43 - INFO - __main__ - Ep 195/200  train=0.002852  val=0.002570  mse(full,rest)=0.141867  cos(f,u)=0.7317  cos(f,r)=0.9222  ← BEST
+10/13/2026 10:51:55 - INFO - __main__ - Ep 196/200  train=0.002835  val=0.003081  mse(full,rest)=0.147325  cos(f,u)=0.7317  cos(f,r)=0.9192
+10/13/2026 10:52:07 - INFO - __main__ - Ep 197/200  train=0.002751  val=0.002923  mse(full,rest)=0.136284  cos(f,u)=0.7317  cos(f,r)=0.9257
+10/13/2026 10:52:19 - INFO - __main__ - Ep 198/200  train=0.002859  val=0.003627  mse(full,rest)=0.152612  cos(f,u)=0.7317  cos(f,r)=0.9158
+10/13/2026 10:52:31 - INFO - __main__ - Ep 199/200  train=0.002801  val=0.002854  mse(full,rest)=0.133300  cos(f,u)=0.7317  cos(f,r)=0.9272
+10/13/2026 10:52:43 - INFO - __main__ - Ep 200/200  train=0.002808  val=0.003625  mse(full,rest)=0.152188  cos(f,u)=0.7317  cos(f,r)=0.9164
+10/13/2026 10:52:43 - INFO - __main__ - 
+Stage 1 done.  best_val=0.002570  ckpt=weights/diffusion_densenet121_window_r360_nv23_none_T100.best.pt
+  Final cos(E_full, E_under)    = 0.7317
+  Final cos(E_full, E_restored) = 0.9164
+10/13/2026 10:52:43 - INFO - __main__ - Training curves saved → plots/training_curves_densenet121_window_r360_nv23_none.png
+10/13/2026 10:52:43 - INFO - __main__ - 
+============================================================
+Stage 2 — Linear Probe
+  pooling=none  num_labels=6  epochs=200
+  ckpt=weights/linprobe_densenet121_window_r360_nv23_none.best.pt  (pooling별 공유, acceleration 무관)
+============================================================
+10/13/2026 10:52:46 - INFO - __main__ -   Probe ep   1  loss=0.19170  val_AUROC=0.7805  best=0.7805
+10/13/2026 10:53:42 - INFO - __main__ -   Probe ep  20  loss=0.13657  val_AUROC=0.8849  best=0.8849
+10/13/2026 10:54:40 - INFO - __main__ -   Probe ep  40  loss=0.13525  val_AUROC=0.8864  best=0.8864
+10/13/2026 10:55:39 - INFO - __main__ -   Probe ep  60  loss=0.13471  val_AUROC=0.8870  best=0.8870
+10/13/2026 10:56:37 - INFO - __main__ -   Probe ep  80  loss=0.13437  val_AUROC=0.8872  best=0.8872
+10/13/2026 10:57:35 - INFO - __main__ -   Probe ep 100  loss=0.13412  val_AUROC=0.8874  best=0.8874
+10/13/2026 10:58:34 - INFO - __main__ -   Probe ep 120  loss=0.13392  val_AUROC=0.8876  best=0.8876
+10/13/2026 10:59:32 - INFO - __main__ -   Probe ep 140  loss=0.13376  val_AUROC=0.8877  best=0.8877
+10/13/2026 11:00:30 - INFO - __main__ -   Probe ep 160  loss=0.13362  val_AUROC=0.8880  best=0.8880
+10/13/2026 11:01:29 - INFO - __main__ -   Probe ep 180  loss=0.13351  val_AUROC=0.8881  best=0.8881
+10/13/2026 11:02:27 - INFO - __main__ -   Probe ep 200  loss=0.13340  val_AUROC=0.8882  best=0.8882
+10/13/2026 11:02:27 - INFO - __main__ - Stage 2 done.  best_AUROC=0.8882  ckpt=weights/linprobe_densenet121_window_r360_nv23_none.best.pt
+10/13/2026 11:02:30 - INFO - __main__ - 
+============================================================
+Stage 3 — Evaluation
+  AUROC E_full     = 0.8882   ← ceiling
+  AUROC E_under    = 0.6743   ← degraded
+  AUROC E_restored = 0.8355   ← after diffusion
+  Δ(under→restored) = +0.1612
+  cos(E_full, E_under)    = 0.7317
+  cos(E_full, E_restored) = 0.9362
+
+  Per-label AUROC:
+    epidural           full=0.8546  under=0.5121  rest=0.8305  Δ=+0.3184
+    intraparenchymal   full=0.9009  under=0.7039  rest=0.8323  Δ=+0.1284
+    intraventricular   full=0.9476  under=0.7890  rest=0.8938  Δ=+0.1049
+    subarachnoid       full=0.8710  under=0.6341  rest=0.7994  Δ=+0.1652
+    subdural           full=0.8671  under=0.6946  rest=0.8196  Δ=+0.1249
+    any                full=0.8883  under=0.7120  rest=0.8373  Δ=+0.1252
+
+  DeLong test (E_under vs E_restored, * = p<0.05):
+    epidural           p=0.0000 *
+    intraparenchymal   p=0.0000 *
+    intraventricular   p=0.0000 *
+    subarachnoid       p=0.0000 *
+    subdural           p=0.0000 *
+    any                p=0.0000 *
+============================================================
+10/13/2026 11:02:30 - INFO - __main__ - 
+t-SNE 생성 중...
+10/13/2026 11:02:31 - INFO - __main__ - t-SNE 실행 중... (2400 points, D=1024)
+10/13/2026 11:02:32 - INFO - __main__ -   t-SNE saved → plots/tsne_densenet121_window_r360_nv23/tsne_none_epidural.png
+10/13/2026 11:02:32 - INFO - __main__ -   t-SNE saved → plots/tsne_densenet121_window_r360_nv23/tsne_none_intraparenchymal.png
+10/13/2026 11:02:32 - INFO - __main__ -   t-SNE saved → plots/tsne_densenet121_window_r360_nv23/tsne_none_intraventricular.png
+10/13/2026 11:02:32 - INFO - __main__ -   t-SNE saved → plots/tsne_densenet121_window_r360_nv23/tsne_none_subarachnoid.png
+10/13/2026 11:02:33 - INFO - __main__ -   t-SNE saved → plots/tsne_densenet121_window_r360_nv23/tsne_none_subdural.png
+10/13/2026 11:02:33 - INFO - __main__ -   t-SNE saved → plots/tsne_densenet121_window_r360_nv23/tsne_none_any.png
+10/13/2026 11:02:33 - INFO - __main__ - 
+============================================================
+DONE  tag=densenet121_window_r360_nv23  pooling=none
+  AUROC E_full     : 0.8882
+  AUROC E_under    : 0.6743
+  AUROC E_restored : 0.8355
+  Improvement      : +0.1612
+============================================================

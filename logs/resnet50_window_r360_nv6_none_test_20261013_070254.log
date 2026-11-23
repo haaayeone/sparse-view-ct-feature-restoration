@@ -1,0 +1,43 @@
+10/13/2026 07:02:54 - INFO - pooling=none  tag=resnet50_window_r360_nv6  split=test  sample_steps=1  {}
+10/13/2026 07:02:55 - INFO - Loading test data...
+10/13/2026 07:04:37 - INFO - emb_dim=2048  N=112935
+10/13/2026 07:04:37 - INFO - Diffusion loaded: weights/diffusion_resnet50_window_r360_nv6_none_T100.best.pt  (hidden=1024)
+10/13/2026 07:04:38 - INFO - Probe loaded: weights/linprobe_resnet50_window_r360_nv6_none.best.pt
+10/13/2026 07:04:38 - INFO - 
+============================================================
+Evaluating on [test] set
+============================================================
+10/13/2026 07:04:42 - INFO - 
+============================================================
+Stage 3 — Evaluation
+  AUROC E_full     = 0.8837   ← ceiling
+  AUROC E_under    = 0.5331   ← degraded
+  AUROC E_restored = 0.7847   ← after diffusion
+  Δ(under→restored) = +0.2516
+  cos(E_full, E_under)    = 0.3734
+  cos(E_full, E_restored) = 0.8021
+
+  Per-label AUROC:
+    epidural           full=0.8404  under=0.3932  rest=0.7468  Δ=+0.3536
+    intraparenchymal   full=0.9027  under=0.7092  rest=0.8068  Δ=+0.0977
+    intraventricular   full=0.9438  under=0.6998  rest=0.8476  Δ=+0.1478
+    subarachnoid       full=0.8544  under=0.4092  rest=0.7316  Δ=+0.3223
+    subdural           full=0.8720  under=0.4296  rest=0.7757  Δ=+0.3461
+    any                full=0.8889  under=0.5577  rest=0.7997  Δ=+0.2420
+
+  DeLong test (E_under vs E_restored, * = p<0.05):
+    epidural           p=0.0000 *
+    intraparenchymal   p=0.0000 *
+    intraventricular   p=0.0000 *
+    subarachnoid       p=0.0000 *
+    subdural           p=0.0000 *
+    any                p=0.0000 *
+============================================================
+10/13/2026 07:04:42 - INFO - 
+============================================================
+DONE  tag=resnet50_window_r360_nv6  pooling=none  split=test
+  AUROC E_full     : 0.8837
+  AUROC E_under    : 0.5331
+  AUROC E_restored : 0.7847
+  Improvement      : +0.2516
+============================================================

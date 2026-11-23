@@ -1,0 +1,43 @@
+10/13/2026 08:07:31 - INFO - pooling=none  tag=densenet121_window_r360_nv180  split=test  sample_steps=1  {}
+10/13/2026 08:07:32 - INFO - Loading test data...
+10/13/2026 08:10:45 - INFO - emb_dim=1024  N=112935
+10/13/2026 08:10:45 - INFO - Diffusion loaded: weights/diffusion_densenet121_window_r360_nv180_none_T100.best.pt  (hidden=1024)
+10/13/2026 08:10:46 - INFO - Probe loaded: weights/linprobe_densenet121_window_r360_nv180_none.best.pt
+10/13/2026 08:10:46 - INFO - 
+============================================================
+Evaluating on [test] set
+============================================================
+10/13/2026 08:10:49 - INFO - 
+============================================================
+Stage 3 — Evaluation
+  AUROC E_full     = 0.8873   ← ceiling
+  AUROC E_under    = 0.8820   ← degraded
+  AUROC E_restored = 0.8867   ← after diffusion
+  Δ(under→restored) = +0.0047
+  cos(E_full, E_under)    = 0.9878
+  cos(E_full, E_restored) = 0.9931
+
+  Per-label AUROC:
+    epidural           full=0.8495  under=0.8413  rest=0.8498  Δ=+0.0085
+    intraparenchymal   full=0.9078  under=0.9052  rest=0.9078  Δ=+0.0026
+    intraventricular   full=0.9434  under=0.9419  rest=0.9436  Δ=+0.0017
+    subarachnoid       full=0.8605  under=0.8537  rest=0.8587  Δ=+0.0049
+    subdural           full=0.8744  under=0.8666  rest=0.8732  Δ=+0.0067
+    any                full=0.8879  under=0.8835  rest=0.8874  Δ=+0.0039
+
+  DeLong test (E_under vs E_restored, * = p<0.05):
+    epidural           p=0.0000 *
+    intraparenchymal   p=0.0000 *
+    intraventricular   p=0.0000 *
+    subarachnoid       p=0.0000 *
+    subdural           p=0.0000 *
+    any                p=0.0000 *
+============================================================
+10/13/2026 08:10:49 - INFO - 
+============================================================
+DONE  tag=densenet121_window_r360_nv180  pooling=none  split=test
+  AUROC E_full     : 0.8873
+  AUROC E_under    : 0.8820
+  AUROC E_restored : 0.8867
+  Improvement      : +0.0047
+============================================================

@@ -1,0 +1,10 @@
+master_csv:   /data0/hayeon/master_df.csv
+output_dir:   /data0/hayeon/features/densenet121_window/feature_full
+preview_dir:  /data0/hayeon/features/densenet121_window/preview_full
+encoder:      densenet121
+input_mode:   window
+
+radon_size:   256
+n_preview:    5
+batch_size:   64
+num_workers:  44

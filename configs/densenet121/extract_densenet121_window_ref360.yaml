@@ -1,0 +1,17 @@
+# 기준(reference) 360 view 추출 — [0°,180°)를 0.5° 간격으로 (windowing.reconstruct_hu_proxy, n_views>180 경로)
+# 전처리는 sparse 조건과 동일: preprocess_dicom → FBP(ramp, 음수만 clip) → brain/subdural/bone 윈도우 → RGB
+#
+# Usage (서버):
+#   cd ~/hayeon/ich_cf_clean
+#   python extraction_3ch/run_extract_encoder_mp.py configs/densenet121/extract_densenet121_window_ref360.yaml
+#   (5개 인코더 한 번에: bash scripts/extract_ref360.sh)
+master_csv:   /data0/hayeon/master_df.csv
+output_dir:   /data0/hayeon/features_v2/densenet121_window/feature_ref360
+preview_dir:  /data0/hayeon/features_v2/densenet121_window/preview_ref360
+encoder:      densenet121
+input_mode:   window
+n_views:      360
+radon_size:   256
+n_preview:    5
+batch_size:   64
+num_workers:  44

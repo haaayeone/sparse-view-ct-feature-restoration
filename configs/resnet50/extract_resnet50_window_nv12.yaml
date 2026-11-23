@@ -1,0 +1,10 @@
+master_csv:   /data0/hayeon/master_df.csv
+output_dir:   /data0/hayeon/features_v2/resnet50_window/feature_nv12
+preview_dir:  /data0/hayeon/features_v2/resnet50_window/preview_nv12
+encoder:      resnet50
+input_mode:   window
+n_views:      12
+radon_size:   256
+n_preview:    5
+batch_size:   64
+num_workers:  44

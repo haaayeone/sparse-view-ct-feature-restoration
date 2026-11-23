@@ -1,0 +1,109 @@
+10/28/2026 02:17:50 - ==== medsiglip_after_r360_nv6  config=configs/medsiglip_after/train_medsiglip_after_nv6.yaml  device=cuda  amp=True
+     jobs=[('identity', 0), ('meanshift', 0), ('coral', 0), ('ridge', 0), ('diffusion', 42), ('direct', 42), ('mlp', 42)]
+     hp={'T': 100, 'hidden': 1024, 'depth': 4, 'epochs': 200, 'lr': 0.0001, 'wd': 0.0001, 'bs': 256, 'ema': 0.999}  train_frac=1.0
+10/28/2026 02:17:53 - Loading train (526481 slices)...
+10/28/2026 02:22:21 - Loading val (113386 slices)...
+10/28/2026 02:24:44 - Loading test (112935 slices)...
+10/28/2026 02:27:34 - train data on GPU (fp16, 2.4 GB)
+10/28/2026 02:27:35 - probe=weights/linprobe_medsiglip_after_r360_nv6_none.best.pt  emb_dim=1152  train_N=526481  test_N=112935  AUROC E_f=0.9110  E_u=0.5812  cos(f,u)=0.5660
+10/28/2026 02:27:35 - 
+---- medsiglip_after_r360_nv6  method=identity  seed=-
+10/28/2026 02:27:37 - [identity     s0] AUROC E_r=0.5812  Δ=+0.0000  R=0.0%  cos(f,r)=0.5660  val MSE=0.030478  test MSE=0.030565
+10/28/2026 02:27:37 - 
+---- medsiglip_after_r360_nv6  method=meanshift  seed=-
+10/28/2026 02:27:38 - [meanshift    s0] AUROC E_r=0.5812  Δ=+0.0000  R=0.0%  cos(f,r)=0.8151  val MSE=0.012839  test MSE=0.012821
+10/28/2026 02:27:38 - 
+---- medsiglip_after_r360_nv6  method=coral  seed=-
+10/28/2026 02:27:42 -   coral reg=0.0001: val restoration MSE=0.015472
+10/28/2026 02:27:43 -   coral reg=0.001: val restoration MSE=0.015444
+10/28/2026 02:27:44 -   coral reg=0.01: val restoration MSE=0.015261
+10/28/2026 02:27:44 -   coral reg=0.1: val restoration MSE=0.014527
+10/28/2026 02:27:45 -   coral reg=1: val restoration MSE=0.013183
+10/28/2026 02:27:45 -   → coral reg=1
+10/28/2026 02:27:47 - [coral        s0] AUROC E_r=0.5352  Δ=-0.0461  R=-14.0%  cos(f,r)=0.8189  val MSE=0.013183  test MSE=0.013127
+10/28/2026 02:27:47 - 
+---- medsiglip_after_r360_nv6  method=ridge  seed=-
+10/28/2026 02:27:51 -   ridge λ=1e-06: val restoration MSE=0.003361
+10/28/2026 02:27:51 -   ridge λ=1e-05: val restoration MSE=0.003385
+10/28/2026 02:27:52 -   ridge λ=0.0001: val restoration MSE=0.003446
+10/28/2026 02:27:53 -   ridge λ=0.001: val restoration MSE=0.003624
+10/28/2026 02:27:54 -   ridge λ=0.01: val restoration MSE=0.004025
+10/28/2026 02:27:54 -   ridge λ=0.1: val restoration MSE=0.004783
+10/28/2026 02:27:55 -   ridge λ=1: val restoration MSE=0.006715
+10/28/2026 02:27:56 -   ridge λ=10: val restoration MSE=0.009179
+10/28/2026 02:27:56 -   → ridge λ=1e-06
+10/28/2026 02:27:58 - [ridge        s0] AUROC E_r=0.8161  Δ=+0.2349  R=71.2%  cos(f,r)=0.9515  val MSE=0.003361  test MSE=0.003381
+10/28/2026 02:27:58 - 
+---- medsiglip_after_r360_nv6  method=diffusion  seed=42
+10/28/2026 02:28:09 -   diffusion s42 ep   1/200  train=0.003830  val_loss(t~U)=0.001781  val_restore(EMA)=0.007500  best(val_loss) best(val_restore)  (10s)
+10/28/2026 02:29:34 -   diffusion s42 ep  10/200  train=0.000370  val_loss(t~U)=0.000369  val_restore(EMA)=0.003465  best(val_loss) best(val_restore)  (96s)
+10/28/2026 02:31:11 -   diffusion s42 ep  20/200  train=0.000249  val_loss(t~U)=0.000246  val_restore(EMA)=0.003317  best(val_restore)  (192s)
+10/28/2026 02:32:48 -   diffusion s42 ep  30/200  train=0.000204  val_loss(t~U)=0.000192  val_restore(EMA)=0.003343  best(val_loss)  (289s)
+10/28/2026 02:34:24 -   diffusion s42 ep  40/200  train=0.000180  val_loss(t~U)=0.000185  val_restore(EMA)=0.003383    (386s)
+10/28/2026 02:36:00 -   diffusion s42 ep  50/200  train=0.000164  val_loss(t~U)=0.000158  val_restore(EMA)=0.003445  best(val_loss)  (481s)
+10/28/2026 02:37:37 -   diffusion s42 ep  60/200  train=0.000151  val_loss(t~U)=0.000139  val_restore(EMA)=0.003522  best(val_loss)  (578s)
+10/28/2026 02:39:14 -   diffusion s42 ep  70/200  train=0.000139  val_loss(t~U)=0.000162  val_restore(EMA)=0.003612    (675s)
+10/28/2026 02:40:50 -   diffusion s42 ep  80/200  train=0.000131  val_loss(t~U)=0.000134  val_restore(EMA)=0.003695    (771s)
+10/28/2026 02:42:23 -   diffusion s42 ep  90/200  train=0.000125  val_loss(t~U)=0.000120  val_restore(EMA)=0.003786    (864s)
+10/28/2026 02:43:57 -   diffusion s42 ep 100/200  train=0.000120  val_loss(t~U)=0.000119  val_restore(EMA)=0.003866  best(val_loss)  (958s)
+10/28/2026 02:45:32 -   diffusion s42 ep 110/200  train=0.000115  val_loss(t~U)=0.000126  val_restore(EMA)=0.003950    (1053s)
+10/28/2026 02:47:08 -   diffusion s42 ep 120/200  train=0.000111  val_loss(t~U)=0.000116  val_restore(EMA)=0.004140    (1149s)
+10/28/2026 02:48:44 -   diffusion s42 ep 130/200  train=0.000106  val_loss(t~U)=0.000129  val_restore(EMA)=0.004216    (1245s)
+10/28/2026 02:50:18 -   diffusion s42 ep 140/200  train=0.000102  val_loss(t~U)=0.000106  val_restore(EMA)=0.004317    (1339s)
+10/28/2026 02:51:54 -   diffusion s42 ep 150/200  train=0.000100  val_loss(t~U)=0.000101  val_restore(EMA)=0.004358    (1436s)
+10/28/2026 02:53:31 -   diffusion s42 ep 160/200  train=0.000096  val_loss(t~U)=0.000107  val_restore(EMA)=0.004506    (1532s)
+10/28/2026 02:55:07 -   diffusion s42 ep 170/200  train=0.000092  val_loss(t~U)=0.000094  val_restore(EMA)=0.004614    (1628s)
+10/28/2026 02:56:43 -   diffusion s42 ep 180/200  train=0.000089  val_loss(t~U)=0.000116  val_restore(EMA)=0.004780    (1724s)
+10/28/2026 02:58:18 -   diffusion s42 ep 190/200  train=0.000086  val_loss(t~U)=0.000090  val_restore(EMA)=0.004865    (1819s)
+10/28/2026 02:59:53 -   diffusion s42 ep 200/200  train=0.000086  val_loss(t~U)=0.000100  val_restore(EMA)=0.004921    (1914s)
+10/28/2026 02:59:55 - [diffusion_vl s42] AUROC E_r=0.8025  Δ=+0.2213  R=67.1%  cos(f,r)=0.9326  val MSE=0.004811  test MSE=0.004841
+10/28/2026 02:59:57 - [diffusion    s42] AUROC E_r=0.8215  Δ=+0.2402  R=72.8%  cos(f,r)=0.9526  val MSE=0.003307  test MSE=0.003335
+10/28/2026 02:59:57 - 
+---- medsiglip_after_r360_nv6  method=direct  seed=42
+10/28/2026 03:00:07 -   direct s42 ep   1/200  train=0.005288  val_restore(EMA)=0.005882  best(val_restore)  (9s)
+10/28/2026 03:01:30 -   direct s42 ep  10/200  train=0.002671  val_restore(EMA)=0.002633  best(val_restore)  (92s)
+10/28/2026 03:03:02 -   direct s42 ep  20/200  train=0.002301  val_restore(EMA)=0.002681    (185s)
+10/28/2026 03:04:34 -   direct s42 ep  30/200  train=0.001980  val_restore(EMA)=0.002817    (277s)
+10/28/2026 03:05:56 -   direct s42 ep  40/200  train=0.001767  val_restore(EMA)=0.002926    (358s)
+10/28/2026 03:07:18 -   direct s42 ep  50/200  train=0.001627  val_restore(EMA)=0.003003    (441s)
+10/28/2026 03:08:41 -   direct s42 ep  60/200  train=0.001530  val_restore(EMA)=0.003065    (524s)
+10/28/2026 03:10:04 -   direct s42 ep  70/200  train=0.001458  val_restore(EMA)=0.003116    (607s)
+10/28/2026 03:11:27 -   direct s42 ep  80/200  train=0.001405  val_restore(EMA)=0.003160    (690s)
+10/28/2026 03:12:51 -   direct s42 ep  90/200  train=0.001361  val_restore(EMA)=0.003195    (774s)
+10/28/2026 03:14:15 -   direct s42 ep 100/200  train=0.001327  val_restore(EMA)=0.003226    (857s)
+10/28/2026 03:15:38 -   direct s42 ep 110/200  train=0.001297  val_restore(EMA)=0.003255    (941s)
+10/28/2026 03:17:03 -   direct s42 ep 120/200  train=0.001272  val_restore(EMA)=0.003279    (1026s)
+10/28/2026 03:18:34 -   direct s42 ep 130/200  train=0.001251  val_restore(EMA)=0.003304    (1117s)
+10/28/2026 03:20:05 -   direct s42 ep 140/200  train=0.001232  val_restore(EMA)=0.003323    (1207s)
+10/28/2026 03:21:35 -   direct s42 ep 150/200  train=0.001215  val_restore(EMA)=0.003341    (1298s)
+10/28/2026 03:23:07 -   direct s42 ep 160/200  train=0.001200  val_restore(EMA)=0.003360    (1389s)
+10/28/2026 03:24:38 -   direct s42 ep 170/200  train=0.001188  val_restore(EMA)=0.003377    (1481s)
+10/28/2026 03:26:08 -   direct s42 ep 180/200  train=0.001175  val_restore(EMA)=0.003391    (1571s)
+10/28/2026 03:27:39 -   direct s42 ep 190/200  train=0.001164  val_restore(EMA)=0.003405    (1661s)
+10/28/2026 03:29:10 -   direct s42 ep 200/200  train=0.001154  val_restore(EMA)=0.003419    (1753s)
+10/28/2026 03:29:12 - [direct       s42] AUROC E_r=0.8449  Δ=+0.2636  R=79.9%  cos(f,r)=0.9624  val MSE=0.002618  test MSE=0.002637
+10/28/2026 03:29:12 - 
+---- medsiglip_after_r360_nv6  method=mlp  seed=42
+10/28/2026 03:29:19 -   mlp s42 ep   1/200  train=0.005674  val_restore(EMA)=0.006679  best(val_restore)  (7s)
+10/28/2026 03:30:26 -   mlp s42 ep  10/200  train=0.002671  val_restore(EMA)=0.002641  best(val_restore)  (74s)
+10/28/2026 03:31:40 -   mlp s42 ep  20/200  train=0.002291  val_restore(EMA)=0.002674    (148s)
+10/28/2026 03:32:56 -   mlp s42 ep  30/200  train=0.001970  val_restore(EMA)=0.002805    (224s)
+10/28/2026 03:34:07 -   mlp s42 ep  40/200  train=0.001754  val_restore(EMA)=0.002913    (295s)
+10/28/2026 03:35:20 -   mlp s42 ep  50/200  train=0.001612  val_restore(EMA)=0.002993    (369s)
+10/28/2026 03:36:37 -   mlp s42 ep  60/200  train=0.001515  val_restore(EMA)=0.003057    (445s)
+10/28/2026 03:37:52 -   mlp s42 ep  70/200  train=0.001444  val_restore(EMA)=0.003108    (521s)
+10/28/2026 03:39:09 -   mlp s42 ep  80/200  train=0.001391  val_restore(EMA)=0.003151    (597s)
+10/28/2026 03:40:24 -   mlp s42 ep  90/200  train=0.001348  val_restore(EMA)=0.003187    (672s)
+10/28/2026 03:41:39 -   mlp s42 ep 100/200  train=0.001313  val_restore(EMA)=0.003219    (748s)
+10/28/2026 03:42:56 -   mlp s42 ep 110/200  train=0.001284  val_restore(EMA)=0.003247    (824s)
+10/28/2026 03:44:12 -   mlp s42 ep 120/200  train=0.001259  val_restore(EMA)=0.003274    (900s)
+10/28/2026 03:45:26 -   mlp s42 ep 130/200  train=0.001238  val_restore(EMA)=0.003296    (974s)
+10/28/2026 03:46:42 -   mlp s42 ep 140/200  train=0.001219  val_restore(EMA)=0.003317    (1050s)
+10/28/2026 03:47:58 -   mlp s42 ep 150/200  train=0.001202  val_restore(EMA)=0.003336    (1126s)
+10/28/2026 03:49:13 -   mlp s42 ep 160/200  train=0.001187  val_restore(EMA)=0.003355    (1202s)
+10/28/2026 03:50:29 -   mlp s42 ep 170/200  train=0.001175  val_restore(EMA)=0.003371    (1277s)
+10/28/2026 03:51:32 -   mlp s42 ep 180/200  train=0.001163  val_restore(EMA)=0.003387    (1340s)
+10/28/2026 03:52:34 -   mlp s42 ep 190/200  train=0.001151  val_restore(EMA)=0.003401    (1402s)
+10/28/2026 03:53:36 -   mlp s42 ep 200/200  train=0.001141  val_restore(EMA)=0.003416    (1465s)
+10/28/2026 03:53:38 - [mlp          s42] AUROC E_r=0.8458  Δ=+0.2646  R=80.2%  cos(f,r)=0.9624  val MSE=0.002620  test MSE=0.002638
+10/28/2026 03:53:38 - ==== done medsiglip_after_r360_nv6

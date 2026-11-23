@@ -1,0 +1,58 @@
+{
+ "tag": "dinov2_window_r360_nv45",
+ "method": "identity",
+ "seed": 0,
+ "encoder_tag": "dinov2_window_r360_nv45",
+ "config": "configs/dinov2/train_dinov2_window_nv45.yaml",
+ "emb_dim": 1024,
+ "train_N": 526481,
+ "train_frac": 1.0,
+ "hp": {
+  "T": 100,
+  "hidden": 1024,
+  "depth": 4,
+  "epochs": 200,
+  "lr": 0.0001,
+  "wd": 0.0001,
+  "bs": 256,
+  "ema": 0.999
+ },
+ "amp": true,
+ "selection": "val_restoration_mse (hyperparameter)",
+ "seconds": 0.9553592205047607,
+ "n_params": 0,
+ "auroc_f": 0.9022210951643993,
+ "auroc_u": 0.7666371404211709,
+ "auroc_r": 0.7666371404211709,
+ "delta": 0.0,
+ "R_pct": 0.0,
+ "cos_u": 0.6310024857521057,
+ "cos_r": 0.6310024857521057,
+ "per_label_r": {
+  "epidural": 0.774325779002164,
+  "intraparenchymal": 0.7873262055286429,
+  "intraventricular": 0.7851303093277753,
+  "subarachnoid": 0.7506149559442972,
+  "subdural": 0.7194963028712793,
+  "any": 0.7829292898528677
+ },
+ "per_label_f": {
+  "epidural": 0.8546933749577823,
+  "intraparenchymal": 0.9275379711831828,
+  "intraventricular": 0.9553821389611213,
+  "subarachnoid": 0.8730657212139794,
+  "subdural": 0.8949370854196854,
+  "any": 0.907710279250645
+ },
+ "per_label_u": {
+  "epidural": 0.774325779002164,
+  "intraparenchymal": 0.7873262055286429,
+  "intraventricular": 0.7851303093277753,
+  "subarachnoid": 0.7506149559442972,
+  "subdural": 0.7194963028712793,
+  "any": 0.7829292898528677
+ },
+ "val_restore_mse": 1.4993700997036672,
+ "test_restore_mse": 1.4986003425643069,
+ "created": "2026-11-12T11:42:42.359706"
+}

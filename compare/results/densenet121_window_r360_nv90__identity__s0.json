@@ -1,0 +1,58 @@
+{
+ "tag": "densenet121_window_r360_nv90",
+ "method": "identity",
+ "seed": 0,
+ "encoder_tag": "densenet121_window_r360_nv90",
+ "config": "configs/densenet121/train_densenet121_window_nv90.yaml",
+ "emb_dim": 1024,
+ "train_N": 526481,
+ "train_frac": 1.0,
+ "hp": {
+  "T": 100,
+  "hidden": 1024,
+  "depth": 4,
+  "epochs": 200,
+  "lr": 0.0001,
+  "wd": 0.0001,
+  "bs": 256,
+  "ema": 0.999
+ },
+ "amp": true,
+ "selection": "val_restoration_mse (hyperparameter)",
+ "seconds": 1.004117727279663,
+ "n_params": 0,
+ "auroc_f": 0.8872644134004073,
+ "auroc_u": 0.7660101427647371,
+ "auroc_r": 0.7660101427647371,
+ "delta": 0.0,
+ "R_pct": 0.0,
+ "cos_u": 0.8566668033599854,
+ "cos_r": 0.8566668033599854,
+ "per_label_r": {
+  "epidural": 0.7297338006764871,
+  "intraparenchymal": 0.7955378563646707,
+  "intraventricular": 0.8397069621551481,
+  "subarachnoid": 0.741622912623727,
+  "subdural": 0.7327681988207956,
+  "any": 0.756691125947595
+ },
+ "per_label_f": {
+  "epidural": 0.8495284362435086,
+  "intraparenchymal": 0.9078393908132919,
+  "intraventricular": 0.9433835006631495,
+  "subarachnoid": 0.8604661751845671,
+  "subdural": 0.8744293348178289,
+  "any": 0.8879396426800976
+ },
+ "per_label_u": {
+  "epidural": 0.7297338006764871,
+  "intraparenchymal": 0.7955378563646707,
+  "intraventricular": 0.8397069621551481,
+  "subarachnoid": 0.741622912623727,
+  "subdural": 0.7327681988207956,
+  "any": 0.756691125947595
+ },
+ "val_restore_mse": 0.2770358536740647,
+ "test_restore_mse": 0.2772996929234737,
+ "created": "2026-11-12T16:56:49.895064"
+}

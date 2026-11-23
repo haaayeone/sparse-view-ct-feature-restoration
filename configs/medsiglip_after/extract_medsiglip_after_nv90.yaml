@@ -1,0 +1,19 @@
+# MedSigLIP 재추출 — 다른 4개 인코더와 동일한 전처리 (window AFTER FBP)
+#   preprocess_dicom → reconstruct_hu_proxy (FBP, max 정규화 없음) → window_to_pil
+#   windows 미지정 = windowing.DEFAULT_WINDOWS (brain 40/80, subdural 80/200, bone 600/2800)
+# 기존 /data0/hayeon/features_v2/medsiglip_window/ (window BEFORE, soft) 는 건드리지 않음.
+#
+# Usage (서버):
+#   cd ~/hayeon/ich_cf_clean
+#   python extraction_3ch/run_extract_encoder_mp.py configs/medsiglip_after/extract_medsiglip_after_nv90.yaml
+master_csv:   /data0/hayeon/master_df.csv
+output_dir:   /data0/hayeon/features_v2/medsiglip_after/feature_nv90
+preview_dir:  /data0/hayeon/features_v2/medsiglip_after/preview_nv90
+encoder:      medsiglip
+input_mode:   window
+n_views:      90
+radon_size:   256
+n_preview:    5
+batch_size:   64
+num_workers:  44
+model_id:     google/medsiglip-448

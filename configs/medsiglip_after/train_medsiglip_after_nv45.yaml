@@ -1,0 +1,29 @@
+# MedSigLIP (window AFTER FBP) — Stage 1 diffusion → Stage 2 probe → Stage 3 eval
+# 하이퍼파라미터는 이전 MedSigLIP 학습 설정과 동일, 경로/tag만 변경.
+#
+# Usage (서버):
+#   cd ~/hayeon/ich_cf_clean
+#   python train_diffusion.py configs/medsiglip_after/train_medsiglip_after_nv45.yaml
+#   python run_eval.py configs/medsiglip_after/train_medsiglip_after_nv45.yaml --split test
+csv_path:          /data0/hayeon/master_df.csv
+full_feature_dir:  /data0/hayeon/features_v2/medsiglip_after/feature_ref360
+under_feature_dir: /data0/hayeon/features_v2/medsiglip_after/feature_nv45
+tag:               medsiglip_after_r360_nv45
+pooling:           none
+
+label_cols: [epidural, intraparenchymal, intraventricular, subarachnoid, subdural, any]
+
+diffusion_T:            100
+diffusion_hidden:       1024
+diffusion_depth:        4
+diffusion_epochs:       200
+diffusion_lr:           1.0e-4
+diffusion_wd:           1.0e-4
+diffusion_batch:        256
+diffusion_ema_decay:    0.999
+diffusion_sample_steps: 1
+
+lr:           1.0e-4
+weight_decay: 1.0e-4
+num_epochs:   200
+patience:     20

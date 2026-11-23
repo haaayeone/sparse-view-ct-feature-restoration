@@ -1,0 +1,36 @@
+11/12/2026 10:47:18 - ==== dinov2_window_r360_nv180  config=configs/dinov2/train_dinov2_window_nv180.yaml  device=cuda  amp=True
+     jobs=[('identity', 0), ('mlp', 42)]
+     hp={'T': 100, 'hidden': 1024, 'depth': 4, 'epochs': 200, 'lr': 0.0001, 'wd': 0.0001, 'bs': 256, 'ema': 0.999}  train_frac=1.0
+11/12/2026 10:47:19 - Loading train (526481 slices)...
+11/12/2026 10:52:43 - Loading val (113386 slices)...
+11/12/2026 10:55:29 - Loading test (112935 slices)...
+11/12/2026 10:58:34 - train data on GPU (fp16, 2.2 GB)
+11/12/2026 10:58:35 - probe=weights/linprobe_dinov2_window_r360_nv180_none.best.pt  emb_dim=1024  train_N=526481  test_N=112935  AUROC E_f=0.9022  E_u=0.8986  cos(f,u)=0.9835
+11/12/2026 10:58:36 - 
+---- dinov2_window_r360_nv180  method=identity  seed=-
+11/12/2026 10:58:37 - [identity     s0] AUROC E_r=0.8986  Δ=+0.0000  R=0.0%  cos(f,r)=0.9835  val MSE=0.069423  test MSE=0.069305
+11/12/2026 10:58:37 - 
+---- dinov2_window_r360_nv180  method=mlp  seed=42
+11/12/2026 10:58:43 -   mlp s42 ep   1/200  train=0.054407  val_restore(EMA)=0.055148  best(val_restore)  (6s)
+11/12/2026 10:59:34 -   mlp s42 ep  10/200  train=0.039249  val_restore(EMA)=0.045175    (56s)
+11/12/2026 11:00:29 -   mlp s42 ep  20/200  train=0.031553  val_restore(EMA)=0.048141    (112s)
+11/12/2026 11:01:25 -   mlp s42 ep  30/200  train=0.028121  val_restore(EMA)=0.049809    (168s)
+11/12/2026 11:02:21 -   mlp s42 ep  40/200  train=0.026257  val_restore(EMA)=0.050867    (224s)
+11/12/2026 11:03:17 -   mlp s42 ep  50/200  train=0.025102  val_restore(EMA)=0.051590    (280s)
+11/12/2026 11:04:13 -   mlp s42 ep  60/200  train=0.024290  val_restore(EMA)=0.052165    (335s)
+11/12/2026 11:05:09 -   mlp s42 ep  70/200  train=0.023686  val_restore(EMA)=0.052617    (391s)
+11/12/2026 11:06:04 -   mlp s42 ep  80/200  train=0.023213  val_restore(EMA)=0.053023    (447s)
+11/12/2026 11:07:00 -   mlp s42 ep  90/200  train=0.022837  val_restore(EMA)=0.053349    (503s)
+11/12/2026 11:07:56 -   mlp s42 ep 100/200  train=0.022519  val_restore(EMA)=0.053662    (559s)
+11/12/2026 11:08:52 -   mlp s42 ep 110/200  train=0.022250  val_restore(EMA)=0.053924    (614s)
+11/12/2026 11:09:48 -   mlp s42 ep 120/200  train=0.022019  val_restore(EMA)=0.054154    (670s)
+11/12/2026 11:10:43 -   mlp s42 ep 130/200  train=0.021813  val_restore(EMA)=0.054386    (726s)
+11/12/2026 11:11:39 -   mlp s42 ep 140/200  train=0.021643  val_restore(EMA)=0.054621    (782s)
+11/12/2026 11:12:35 -   mlp s42 ep 150/200  train=0.021482  val_restore(EMA)=0.054793    (838s)
+11/12/2026 11:13:31 -   mlp s42 ep 160/200  train=0.021340  val_restore(EMA)=0.054980    (893s)
+11/12/2026 11:14:27 -   mlp s42 ep 170/200  train=0.021208  val_restore(EMA)=0.055126    (949s)
+11/12/2026 11:15:22 -   mlp s42 ep 180/200  train=0.021092  val_restore(EMA)=0.055265    (1005s)
+11/12/2026 11:16:18 -   mlp s42 ep 190/200  train=0.020984  val_restore(EMA)=0.055411    (1061s)
+11/12/2026 11:17:14 -   mlp s42 ep 200/200  train=0.020889  val_restore(EMA)=0.055558    (1117s)
+11/12/2026 11:17:16 - [mlp          s42] AUROC E_r=0.9009  Δ=+0.0022  R=62.2%  cos(f,r)=0.9893  val MSE=0.044699  test MSE=0.044579
+11/12/2026 11:17:16 - ==== done dinov2_window_r360_nv180

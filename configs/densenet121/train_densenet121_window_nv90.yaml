@@ -1,0 +1,22 @@
+csv_path:          /data0/hayeon/master_df.csv
+full_feature_dir:  /data0/hayeon/features_v2/densenet121_window/feature_ref360
+under_feature_dir: /data0/hayeon/features_v2/densenet121_window/feature_nv90
+tag:               densenet121_window_r360_nv90
+pooling:           none
+
+label_cols: [epidural, intraparenchymal, intraventricular, subarachnoid, subdural, any]
+
+diffusion_T:            100
+diffusion_hidden:       1024
+diffusion_depth:        4
+diffusion_epochs:       200
+diffusion_lr:           1.0e-4
+diffusion_wd:           1.0e-4
+diffusion_batch:        256
+diffusion_ema_decay:    0.999
+diffusion_sample_steps: 1
+
+lr:           1.0e-4
+weight_decay: 1.0e-4
+num_epochs:   200
+patience:     20

@@ -1,0 +1,36 @@
+11/12/2026 14:16:46 - ==== resnet50_window_r360_nv45  config=configs/resnet50/train_resnet50_window_nv45.yaml  device=cuda  amp=True
+     jobs=[('identity', 0), ('mlp', 42)]
+     hp={'T': 100, 'hidden': 1024, 'depth': 4, 'epochs': 200, 'lr': 0.0001, 'wd': 0.0001, 'bs': 256, 'ema': 0.999}  train_frac=1.0
+11/12/2026 14:16:47 - Loading train (526481 slices)...
+11/12/2026 14:23:30 - Loading val (113386 slices)...
+11/12/2026 14:26:53 - Loading test (112935 slices)...
+11/12/2026 14:30:14 - train data on GPU (fp16, 4.3 GB)
+11/12/2026 14:30:15 - probe=weights/linprobe_resnet50_window_r360_nv45_none.best.pt  emb_dim=2048  train_N=526481  test_N=112935  AUROC E_f=0.8837  E_u=0.7217  cos(f,u)=0.6520
+11/12/2026 14:30:15 - 
+---- resnet50_window_r360_nv45  method=identity  seed=-
+11/12/2026 14:30:17 - [identity     s0] AUROC E_r=0.7217  Δ=+0.0000  R=0.0%  cos(f,r)=0.6520  val MSE=0.059070  test MSE=0.058953
+11/12/2026 14:30:17 - 
+---- resnet50_window_r360_nv45  method=mlp  seed=42
+11/12/2026 14:30:25 -   mlp s42 ep   1/200  train=0.020881  val_restore(EMA)=0.021935  best(val_restore)  (7s)
+11/12/2026 14:31:28 -   mlp s42 ep  10/200  train=0.011608  val_restore(EMA)=0.012229  best(val_restore)  (70s)
+11/12/2026 14:32:38 -   mlp s42 ep  20/200  train=0.009583  val_restore(EMA)=0.013068    (140s)
+11/12/2026 14:33:48 -   mlp s42 ep  30/200  train=0.008384  val_restore(EMA)=0.013837    (210s)
+11/12/2026 14:34:58 -   mlp s42 ep  40/200  train=0.007733  val_restore(EMA)=0.014319    (280s)
+11/12/2026 14:36:08 -   mlp s42 ep  50/200  train=0.007322  val_restore(EMA)=0.014663    (350s)
+11/12/2026 14:37:18 -   mlp s42 ep  60/200  train=0.007034  val_restore(EMA)=0.014929    (420s)
+11/12/2026 14:38:28 -   mlp s42 ep  70/200  train=0.006818  val_restore(EMA)=0.015154    (491s)
+11/12/2026 14:39:38 -   mlp s42 ep  80/200  train=0.006651  val_restore(EMA)=0.015341    (561s)
+11/12/2026 14:40:48 -   mlp s42 ep  90/200  train=0.006516  val_restore(EMA)=0.015509    (631s)
+11/12/2026 14:41:58 -   mlp s42 ep 100/200  train=0.006402  val_restore(EMA)=0.015663    (701s)
+11/12/2026 14:43:08 -   mlp s42 ep 110/200  train=0.006306  val_restore(EMA)=0.015804    (771s)
+11/12/2026 14:44:18 -   mlp s42 ep 120/200  train=0.006224  val_restore(EMA)=0.015932    (841s)
+11/12/2026 14:45:28 -   mlp s42 ep 130/200  train=0.006153  val_restore(EMA)=0.016046    (911s)
+11/12/2026 14:46:38 -   mlp s42 ep 140/200  train=0.006089  val_restore(EMA)=0.016162    (981s)
+11/12/2026 14:47:48 -   mlp s42 ep 150/200  train=0.006033  val_restore(EMA)=0.016264    (1051s)
+11/12/2026 14:48:58 -   mlp s42 ep 160/200  train=0.005982  val_restore(EMA)=0.016359    (1121s)
+11/12/2026 14:50:08 -   mlp s42 ep 170/200  train=0.005936  val_restore(EMA)=0.016453    (1191s)
+11/12/2026 14:51:18 -   mlp s42 ep 180/200  train=0.005894  val_restore(EMA)=0.016541    (1260s)
+11/12/2026 14:52:28 -   mlp s42 ep 190/200  train=0.005855  val_restore(EMA)=0.016624    (1330s)
+11/12/2026 14:53:38 -   mlp s42 ep 200/200  train=0.005819  val_restore(EMA)=0.016705    (1401s)
+11/12/2026 14:53:41 - [mlp          s42] AUROC E_r=0.8540  Δ=+0.1324  R=81.7%  cos(f,r)=0.9235  val MSE=0.012229  test MSE=0.012218
+11/12/2026 14:53:41 - ==== done resnet50_window_r360_nv45

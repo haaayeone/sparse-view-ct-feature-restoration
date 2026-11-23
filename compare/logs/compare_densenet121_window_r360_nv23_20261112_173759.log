@@ -1,0 +1,36 @@
+11/12/2026 17:37:59 - ==== densenet121_window_r360_nv23  config=configs/densenet121/train_densenet121_window_nv23.yaml  device=cuda  amp=True
+     jobs=[('identity', 0), ('mlp', 42)]
+     hp={'T': 100, 'hidden': 1024, 'depth': 4, 'epochs': 200, 'lr': 0.0001, 'wd': 0.0001, 'bs': 256, 'ema': 0.999}  train_frac=1.0
+11/12/2026 17:38:01 - Loading train (526481 slices)...
+11/12/2026 17:39:32 - Loading val (113386 slices)...
+11/12/2026 17:40:27 - Loading test (112935 slices)...
+11/12/2026 17:41:26 - train data on GPU (fp16, 2.2 GB)
+11/12/2026 17:41:27 - probe=weights/linprobe_densenet121_window_r360_nv23_none.best.pt  emb_dim=1024  train_N=526481  test_N=112935  AUROC E_f=0.8873  E_u=0.6803  cos(f,u)=0.7317
+11/12/2026 17:41:27 - 
+---- densenet121_window_r360_nv23  method=identity  seed=-
+11/12/2026 17:41:29 - [identity     s0] AUROC E_r=0.6803  Δ=+0.0000  R=0.0%  cos(f,r)=0.7317  val MSE=0.515489  test MSE=0.515365
+11/12/2026 17:41:29 - 
+---- densenet121_window_r360_nv23  method=mlp  seed=42
+11/12/2026 17:41:35 -   mlp s42 ep   1/200  train=0.125851  val_restore(EMA)=0.124849  best(val_restore)  (6s)
+11/12/2026 17:42:26 -   mlp s42 ep  10/200  train=0.080206  val_restore(EMA)=0.085386    (57s)
+11/12/2026 17:43:23 -   mlp s42 ep  20/200  train=0.069604  val_restore(EMA)=0.089922    (114s)
+11/12/2026 17:44:20 -   mlp s42 ep  30/200  train=0.061946  val_restore(EMA)=0.095620    (170s)
+11/12/2026 17:45:16 -   mlp s42 ep  40/200  train=0.057364  val_restore(EMA)=0.099678    (227s)
+11/12/2026 17:46:13 -   mlp s42 ep  50/200  train=0.054502  val_restore(EMA)=0.102556    (284s)
+11/12/2026 17:47:10 -   mlp s42 ep  60/200  train=0.052545  val_restore(EMA)=0.104687    (340s)
+11/12/2026 17:48:06 -   mlp s42 ep  70/200  train=0.051124  val_restore(EMA)=0.106390    (397s)
+11/12/2026 17:49:03 -   mlp s42 ep  80/200  train=0.050040  val_restore(EMA)=0.107794    (454s)
+11/12/2026 17:50:00 -   mlp s42 ep  90/200  train=0.049177  val_restore(EMA)=0.108989    (510s)
+11/12/2026 17:50:56 -   mlp s42 ep 100/200  train=0.048468  val_restore(EMA)=0.110026    (567s)
+11/12/2026 17:51:53 -   mlp s42 ep 110/200  train=0.047875  val_restore(EMA)=0.110981    (624s)
+11/12/2026 17:52:50 -   mlp s42 ep 120/200  train=0.047370  val_restore(EMA)=0.111800    (680s)
+11/12/2026 17:53:46 -   mlp s42 ep 130/200  train=0.046934  val_restore(EMA)=0.112571    (737s)
+11/12/2026 17:54:43 -   mlp s42 ep 140/200  train=0.046553  val_restore(EMA)=0.113250    (793s)
+11/12/2026 17:55:39 -   mlp s42 ep 150/200  train=0.046215  val_restore(EMA)=0.113880    (850s)
+11/12/2026 17:56:36 -   mlp s42 ep 160/200  train=0.045902  val_restore(EMA)=0.114465    (907s)
+11/12/2026 17:57:33 -   mlp s42 ep 170/200  train=0.045628  val_restore(EMA)=0.114983    (963s)
+11/12/2026 17:58:29 -   mlp s42 ep 180/200  train=0.045390  val_restore(EMA)=0.115489    (1020s)
+11/12/2026 17:59:26 -   mlp s42 ep 190/200  train=0.045166  val_restore(EMA)=0.115945    (1077s)
+11/12/2026 18:00:23 -   mlp s42 ep 200/200  train=0.044952  val_restore(EMA)=0.116401    (1133s)
+11/12/2026 18:00:24 - [mlp          s42] AUROC E_r=0.8536  Δ=+0.1733  R=83.7%  cos(f,r)=0.9538  val MSE=0.085365  test MSE=0.085307
+11/12/2026 18:00:24 - ==== done densenet121_window_r360_nv23
