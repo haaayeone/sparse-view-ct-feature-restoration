@@ -98,8 +98,10 @@ python src/analysis/bootstrap_study.py --pred_dir preds_mlp --B 2000 --out_dir r
 
 ## Licence
 
-Not yet set. Until a licence file is added, default copyright applies and the
-code is viewable but not reusable.
+MIT — see `LICENSE`. Encoder weights are not covered: they are pulled from
+their original sources and carry their own terms.
+
+If you use this code, please cite the paper.
 
 ## Citation
 
