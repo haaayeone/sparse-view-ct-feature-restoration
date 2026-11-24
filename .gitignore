@@ -1,10 +1,35 @@
-﻿__pycache__/
-*.pyc
-*.tgz
+# 로그
+*.log
+logs/
+**/logs/
+
+# 모델 가중치 — 용량이 크고 재배포 대상이 아님
 *.pt
 *.pth
+*.ckpt
+weights/
+**/weights/
+
+# 임베딩·특징 캐시
 *.npy
 *.npz
+features_*/
+preds/
+preds_*/
+
+# 데이터
 *.dcm
-weights/
+*.zip
+
+# 파이썬
+__pycache__/
+*.py[cod]
 .ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / 에디터
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

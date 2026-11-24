@@ -1,6 +1,0 @@
-10/12/2026 04:34:44 - INFO - __main__ - Logging to file: logs/medsiglip_after_r360_nv90_none_20261012_043444.log
-10/12/2026 04:34:44 - INFO - __main__ - 
-Device   : cuda  GPUs=1
-Pooling  : none  {}
-Tag      : medsiglip_after_r360_nv90
-10/12/2026 04:34:47 - INFO - __main__ - Loading train data to RAM...

@@ -1,4 +1,0 @@
-11/12/2026 07:03:20 - ==== medsiglip_after_r360_nv180  config=configs/medsiglip_after/train_medsiglip_after_nv180.yaml  device=cuda  amp=True
-     jobs=[('identity', 0), ('mlp', 42)]
-     hp={'T': 100, 'hidden': 1024, 'depth': 4, 'epochs': 200, 'lr': 0.0001, 'wd': 0.0001, 'bs': 256, 'ema': 0.999}  train_frac=1.0
-11/12/2026 07:03:22 - Loading train (526481 slices)...
